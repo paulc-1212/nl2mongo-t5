@@ -1,0 +1,30 @@
+Database Schema:
+
+Collection: users
+  Fields:
+    - _id: ObjectId
+    - email: String
+    - name: String
+    - dob: Date
+    - country: String
+    - stats: Object
+        - bookingsCount: Number (Int)
+        - cancelledBookingsCount: Number (Int)
+        - totalAmountSpent: Number (Double)
+        - totalCreditsBought: Number (Double)
+    - signupDate: Date
+
+Collection: bookings
+  Fields:
+    - _id: ObjectId
+    - userId: ObjectId (References users._id)
+    - createdAt: Date
+    - bookingDate: Date
+    - paymentStatus: String (Enum: "pending", "successful", "failed")
+    - status: String (Enum: "ok", "cancelled")
+    - guests: Number (Int)
+    - additionalNote: String (Nullable)
+    - roomPrice: Number (Double)
+    - discount: Number (Double)
+    - totalCost: Number (Double)
+    - numberNights: Number (Int)
