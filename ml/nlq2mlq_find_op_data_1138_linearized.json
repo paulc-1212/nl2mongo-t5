@@ -1,0 +1,4514 @@
+[
+  {
+    "nlq": "Find users from Germany",
+    "mlq": "c=users; op=find; q=LCB country=Germany RCB"
+  },
+  {
+    "nlq": "Show the user named James Smith",
+    "mlq": "c=users; op=find; q=LCB name=James Smith RCB"
+  },
+  {
+    "nlq": "Get user with email liam.johnson123@gmail.com",
+    "mlq": "c=users; op=find; q=LCB email=liam.johnson123@gmail.com RCB"
+  },
+  {
+    "nlq": "List users residing in Canada",
+    "mlq": "c=users; op=find; q=LCB country=Canada RCB"
+  },
+  {
+    "nlq": "Find user Charlotte Brown",
+    "mlq": "c=users; op=find; q=LCB name=Charlotte Brown RCB"
+  },
+  {
+    "nlq": "Which user has the email address ava.davis789@yahoo.com?",
+    "mlq": "c=users; op=find; q=LCB email=ava.davis789@yahoo.com RCB"
+  },
+  {
+    "nlq": "Show me users from UK",
+    "mlq": "c=users; op=find; q=LCB country=UK RCB"
+  },
+  {
+    "nlq": "Get details for user Noah Williams",
+    "mlq": "c=users; op=find; q=LCB name=Noah Williams RCB"
+  },
+  {
+    "nlq": "Find user with email address henry.martinez555@outlook.com",
+    "mlq": "c=users; op=find; q=LCB email=henry.martinez555@outlook.com RCB"
+  },
+  {
+    "nlq": "List all users from Australia",
+    "mlq": "c=users; op=find; q=LCB country=Australia RCB"
+  },
+  {
+    "nlq": "Show ok bookings",
+    "mlq": "c=bookings; op=find; q=LCB status=ok RCB"
+  },
+  {
+    "nlq": "List cancelled bookings",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled RCB"
+  },
+  {
+    "nlq": "Find bookings with pending payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Get bookings with successful payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful RCB"
+  },
+  {
+    "nlq": "Which bookings have failed payment status?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Find bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=3 RCB"
+  },
+  {
+    "nlq": "List bookings that lasted 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=5 RCB"
+  },
+  {
+    "nlq": "Show bookings with a room price of $250.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=250.5 RCB"
+  },
+  {
+    "nlq": "Find bookings with a discount of $20",
+    "mlq": "c=bookings; op=find; q=LCB discount=20.0 RCB"
+  },
+  {
+    "nlq": "Get bookings costing exactly $475.25",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=475.25 RCB"
+  },
+  {
+    "nlq": "Find users with exactly 15 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=15 RCB"
+  },
+  {
+    "nlq": "Show users with precisely 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=2 RCB"
+  },
+  {
+    "nlq": "Get users who spent exactly $3450.75",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=3450.75 RCB"
+  },
+  {
+    "nlq": "List users that bought exactly $1200 worth of credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=1200.0 RCB"
+  },
+  {
+    "nlq": "Find users with more than 30 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=30 RCB RCB"
+  },
+  {
+    "nlq": "List users with bookings count over 10",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Show users having greater than 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled more than 8 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=8 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent more than $5000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending exceeds $8250.50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=8250.5 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought over $1500 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits worth more than $250",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=250.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with at least 25 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=25 RCB RCB"
+  },
+  {
+    "nlq": "List users with 5 or more bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Show users having 3 or more cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled at least once?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent $10000 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=10000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is minimum $1500.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought credits worth $3000 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=3000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing at least $100 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with less than 5 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "List users with under 12 total bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=12 RCB RCB"
+  },
+  {
+    "nlq": "Show users having fewer than 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled less than 4 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent under $800",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is below $2200.50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=2200.5 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought less than $400 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits under $750",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=750.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with 8 or fewer bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=8 RCB RCB"
+  },
+  {
+    "nlq": "List users with maximum 18 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=18 RCB RCB"
+  },
+  {
+    "nlq": "Show users having at most 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled 5 times or less?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=5 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent $3000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=3000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is maximum $6700.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=6700.0 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought credits worth $2000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing maximum $950 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users who do not have 10 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=10 RCB RCB"
+  },
+  {
+    "nlq": "List users whose bookings count isn't 0",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Show users not having 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Which users did not cancel exactly 3 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "Get users who did not spend $500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending isn't $4100.25",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=4100.25 RCB RCB"
+  },
+  {
+    "nlq": "List users who did not buy $100 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits not equal to $1800",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=1800.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for more than 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count over 1",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing over $800",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is greater than $150.75",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gt=150.75 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount higher than $60?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gt=60.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted longer than 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=7 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration more than 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for at least 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with minimum 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $100 or more",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is minimum $325.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gte=325.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount of $10 or higher?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted 3 nights or more",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with minimum duration of 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for less than 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count under 5",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing under $200",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is less than $550.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lt=550.5 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount lower than $15?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lt=15.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted fewer than 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration less than 8 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=8 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for 4 guests or fewer",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with maximum 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $600 or less",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lte=600.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is maximum $780.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lte=780.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount of $45 or lower?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lte=45.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted 6 nights or less",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=6 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with maximum duration of 9 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=9 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not for 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count different from 1",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings not costing $300",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_ne=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is not $450.25",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_ne=450.25 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings did not receive a $5 discount?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_ne=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that did not last 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration not equal to 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=10 RCB RCB"
+  },
+  {
+    "nlq": "Show me users from France or Spain",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB France, Spain RB RCB RCB"
+  },
+  {
+    "nlq": "List users who reside in either Germany or UK",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Germany, UK RB RCB RCB"
+  },
+  {
+    "nlq": "Get users from Nigeria,  Egypt,  or South Africa",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Nigeria, Egypt, South Africa RB RCB RCB"
+  },
+  {
+    "nlq": "Find users whose country is one of Japan,  China",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, China RB RCB RCB"
+  },
+  {
+    "nlq": "Which users are located in Brazil or Argentina?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Brazil, Argentina RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings with status ok or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB RCB"
+  },
+  {
+    "nlq": "List bookings with payment status pending or failed",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, failed RB RCB RCB"
+  },
+  {
+    "nlq": "Show bookings that are either ok or pending payment",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Get bookings with payment status failed or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & status=cancelled RCB"
+  },
+  {
+    "nlq": "Find bookings that are successful or ok",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & status=ok RCB"
+  },
+  {
+    "nlq": "Find users from USA with more than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Mexico who spent less than $500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.totalAmountSpent=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from France with 0 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Get users from Japan who bought at least $1000 in credits",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalCreditsBought=LCB OP_gte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Which users from India have fewer than 5 bookings?",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.bookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find users not from Germany with spending over $6000",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_ne=Germany RCB & stats.totalAmountSpent=LCB OP_gt=6000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show Canadian users who cancelled exactly 1 booking",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "List users from Brazil whose credits bought are not $0",
+    "mlq": "c=users; op=find; q=LCB country=Brazil & stats.totalCreditsBought=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Egypt with total spent $2500 or less",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.totalAmountSpent=LCB OP_lte=2500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Argentina with 20 or more bookings",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.bookingsCount=LCB OP_gte=20 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=4 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 RCB"
+  },
+  {
+    "nlq": "Find pending bookings costing less than $150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_lt=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings with a discount over $30",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_gt=30.0 RCB RCB"
+  },
+  {
+    "nlq": "Which failed bookings were for more than 5 nights?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings where room price is at least $400",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gte=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings with 2 guests or fewer",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "List pending bookings lasting exactly 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Get successful bookings that did not have 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with total cost different from $100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings for 2 guests costing more than $300",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=2 & totalCost=LCB OP_gt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings for 1 guest lasting 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & numberNights=7 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for 3 guests with room price below $200",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=3 & roomPrice=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 4 guests with discount of $0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=4 & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find failed bookings for 1 guest with duration >= 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=1 & numberNights=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "Which ok bookings had 5 guests and lasted <= 3 nights?",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=5 & numberNights=LCB OP_lte=3 RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings for 2 guests with price not equal to $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=2 & roomPrice=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for >= 3 guests costing less than $1000",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gte=3 RCB & totalCost=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings lasting > 1 night with discount over $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_gt=1 RCB & discount=LCB OP_gt=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings for < 3 guests with room price >= $50",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_lt=3 RCB & roomPrice=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany",
+    "mlq": "c=users; op=find; q=LCB country=Germany RCB"
+  },
+  {
+    "nlq": "Show the user named James Smith",
+    "mlq": "c=users; op=find; q=LCB name=James Smith RCB"
+  },
+  {
+    "nlq": "Get user with email liam.johnson123@gmail.com",
+    "mlq": "c=users; op=find; q=LCB email=liam.johnson123@gmail.com RCB"
+  },
+  {
+    "nlq": "List users residing in Canada",
+    "mlq": "c=users; op=find; q=LCB country=Canada RCB"
+  },
+  {
+    "nlq": "Find user Charlotte Brown",
+    "mlq": "c=users; op=find; q=LCB name=Charlotte Brown RCB"
+  },
+  {
+    "nlq": "Which user has the email address ava.davis789@yahoo.com?",
+    "mlq": "c=users; op=find; q=LCB email=ava.davis789@yahoo.com RCB"
+  },
+  {
+    "nlq": "Show me users from UK",
+    "mlq": "c=users; op=find; q=LCB country=UK RCB"
+  },
+  {
+    "nlq": "Get details for user Noah Williams",
+    "mlq": "c=users; op=find; q=LCB name=Noah Williams RCB"
+  },
+  {
+    "nlq": "Find user with email address henry.martinez555@outlook.com",
+    "mlq": "c=users; op=find; q=LCB email=henry.martinez555@outlook.com RCB"
+  },
+  {
+    "nlq": "List all users from Australia",
+    "mlq": "c=users; op=find; q=LCB country=Australia RCB"
+  },
+  {
+    "nlq": "Show ok bookings",
+    "mlq": "c=bookings; op=find; q=LCB status=ok RCB"
+  },
+  {
+    "nlq": "List cancelled bookings",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled RCB"
+  },
+  {
+    "nlq": "Find bookings with pending payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Get bookings with successful payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful RCB"
+  },
+  {
+    "nlq": "Which bookings have failed payment status?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Find bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=3 RCB"
+  },
+  {
+    "nlq": "List bookings that lasted 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=5 RCB"
+  },
+  {
+    "nlq": "Show bookings with a room price of $250.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=250.5 RCB"
+  },
+  {
+    "nlq": "Find bookings with a discount of $20",
+    "mlq": "c=bookings; op=find; q=LCB discount=20.0 RCB"
+  },
+  {
+    "nlq": "Get bookings costing exactly $475.25",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=475.25 RCB"
+  },
+  {
+    "nlq": "Find users with exactly 15 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=15 RCB"
+  },
+  {
+    "nlq": "Show users with precisely 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=2 RCB"
+  },
+  {
+    "nlq": "Get users who spent exactly $3450.75",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=3450.75 RCB"
+  },
+  {
+    "nlq": "List users that bought exactly $1200 worth of credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=1200.0 RCB"
+  },
+  {
+    "nlq": "Find users with more than 30 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=30 RCB RCB"
+  },
+  {
+    "nlq": "List users with bookings count over 10",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Show users having greater than 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled more than 8 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=8 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent more than $5000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending exceeds $8250.50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=8250.5 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought over $1500 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits worth more than $250",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=250.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with at least 25 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=25 RCB RCB"
+  },
+  {
+    "nlq": "List users with 5 or more bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Show users having 3 or more cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled at least once?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent $10000 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=10000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is minimum $1500.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought credits worth $3000 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=3000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing at least $100 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with less than 5 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "List users with under 12 total bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=12 RCB RCB"
+  },
+  {
+    "nlq": "Show users having fewer than 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled less than 4 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent under $800",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is below $2200.50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=2200.5 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought less than $400 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits under $750",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=750.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with 8 or fewer bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=8 RCB RCB"
+  },
+  {
+    "nlq": "List users with maximum 18 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=18 RCB RCB"
+  },
+  {
+    "nlq": "Show users having at most 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled 5 times or less?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=5 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent $3000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=3000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is maximum $6700.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=6700.0 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought credits worth $2000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing maximum $950 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users who do not have 10 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=10 RCB RCB"
+  },
+  {
+    "nlq": "List users whose bookings count isn't 0",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Show users not having 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Which users did not cancel exactly 3 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "Get users who did not spend $500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending isn't $4100.25",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=4100.25 RCB RCB"
+  },
+  {
+    "nlq": "List users who did not buy $100 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits not equal to $1800",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=1800.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for more than 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count over 1",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing over $800",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is greater than $150.75",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gt=150.75 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount higher than $60?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gt=60.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted longer than 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=7 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration more than 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for at least 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with minimum 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $100 or more",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is minimum $325.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gte=325.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount of $10 or higher?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted 3 nights or more",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with minimum duration of 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for less than 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count under 5",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing under $200",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is less than $550.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lt=550.5 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount lower than $15?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lt=15.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted fewer than 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration less than 8 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=8 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for 4 guests or fewer",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with maximum 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $600 or less",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lte=600.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is maximum $780.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lte=780.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount of $45 or lower?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lte=45.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted 6 nights or less",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=6 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with maximum duration of 9 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=9 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not for 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count different from 1",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings not costing $300",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_ne=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is not $450.25",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_ne=450.25 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings did not receive a $5 discount?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_ne=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that did not last 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration not equal to 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=10 RCB RCB"
+  },
+  {
+    "nlq": "Show me users from France or Spain",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB France, Spain RB RCB RCB"
+  },
+  {
+    "nlq": "List users who reside in either Germany or UK",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Germany, UK RB RCB RCB"
+  },
+  {
+    "nlq": "Get users from Nigeria,  Egypt,  or South Africa",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Nigeria, Egypt, South Africa RB RCB RCB"
+  },
+  {
+    "nlq": "Find users whose country is one of Japan,  China",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, China RB RCB RCB"
+  },
+  {
+    "nlq": "Which users are located in Brazil or Argentina?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Brazil, Argentina RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings with status ok or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB RCB"
+  },
+  {
+    "nlq": "List bookings with payment status pending or failed",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, failed RB RCB RCB"
+  },
+  {
+    "nlq": "Show bookings that are either ok or pending payment",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Get bookings with payment status failed or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & status=cancelled RCB"
+  },
+  {
+    "nlq": "Find bookings that are successful or ok",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & status=ok RCB"
+  },
+  {
+    "nlq": "Find users from USA with more than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Mexico who spent less than $500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.totalAmountSpent=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from France with 0 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Get users from Japan who bought at least $1000 in credits",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalCreditsBought=LCB OP_gte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Which users from India have fewer than 5 bookings?",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.bookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find users not from Germany with spending over $6000",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_ne=Germany RCB & stats.totalAmountSpent=LCB OP_gt=6000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show Canadian users who cancelled exactly 1 booking",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "List users from Brazil whose credits bought are not $0",
+    "mlq": "c=users; op=find; q=LCB country=Brazil & stats.totalCreditsBought=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Egypt with total spent $2500 or less",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.totalAmountSpent=LCB OP_lte=2500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Argentina with 20 or more bookings",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.bookingsCount=LCB OP_gte=20 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=4 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 RCB"
+  },
+  {
+    "nlq": "Find pending bookings costing less than $150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_lt=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings with a discount over $30",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_gt=30.0 RCB RCB"
+  },
+  {
+    "nlq": "Which failed bookings were for more than 5 nights?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings where room price is at least $400",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gte=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings with 2 guests or fewer",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "List pending bookings lasting exactly 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Get successful bookings that did not have 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with total cost different from $100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings for 2 guests costing more than $300",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=2 & totalCost=LCB OP_gt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings for 1 guest lasting 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & numberNights=7 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for 3 guests with room price below $200",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=3 & roomPrice=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 4 guests with discount of $0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=4 & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find failed bookings for 1 guest with duration >= 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=1 & numberNights=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "Which ok bookings had 5 guests and lasted <= 3 nights?",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=5 & numberNights=LCB OP_lte=3 RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings for 2 guests with price not equal to $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=2 & roomPrice=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for >= 3 guests costing less than $1000",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gte=3 RCB & totalCost=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings lasting > 1 night with discount over $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_gt=1 RCB & discount=LCB OP_gt=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings for < 3 guests with room price >= $50",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_lt=3 RCB & roomPrice=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find user Olivia Smith",
+    "mlq": "c=users; op=find; q=LCB name=Olivia Smith RCB"
+  },
+  {
+    "nlq": "Which user is emma.williams321@yahoo.com?",
+    "mlq": "c=users; op=find; q=LCB email=emma.williams321@yahoo.com RCB"
+  },
+  {
+    "nlq": "Show users from Mexico",
+    "mlq": "c=users; op=find; q=LCB country=Mexico RCB"
+  },
+  {
+    "nlq": "Get user named Liam Jones",
+    "mlq": "c=users; op=find; q=LCB name=Liam Jones RCB"
+  },
+  {
+    "nlq": "Find user with email oliver.garcia999@hotmail.com",
+    "mlq": "c=users; op=find; q=LCB email=oliver.garcia999@hotmail.com RCB"
+  },
+  {
+    "nlq": "List users from France",
+    "mlq": "c=users; op=find; q=LCB country=France RCB"
+  },
+  {
+    "nlq": "Show user Isabella Miller",
+    "mlq": "c=users; op=find; q=LCB name=Isabella Miller RCB"
+  },
+  {
+    "nlq": "Who is user james.davis111@outlook.com?",
+    "mlq": "c=users; op=find; q=LCB email=james.davis111@outlook.com RCB"
+  },
+  {
+    "nlq": "Find users located in Spain",
+    "mlq": "c=users; op=find; q=LCB country=Spain RCB"
+  },
+  {
+    "nlq": "Get user Benjamin Rodriguez",
+    "mlq": "c=users; op=find; q=LCB name=Benjamin Rodriguez RCB"
+  },
+  {
+    "nlq": "List bookings with payment status 'successful'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful RCB"
+  },
+  {
+    "nlq": "Find all bookings that are 'ok'",
+    "mlq": "c=bookings; op=find; q=LCB status=ok RCB"
+  },
+  {
+    "nlq": "Show bookings where payment is 'pending'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Which bookings were 'cancelled'?",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled RCB"
+  },
+  {
+    "nlq": "Get bookings with payment 'failed'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Find bookings made for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=1 RCB"
+  },
+  {
+    "nlq": "List bookings with duration of 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=2 RCB"
+  },
+  {
+    "nlq": "Show bookings where the room price was exactly $180",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=180.0 RCB"
+  },
+  {
+    "nlq": "Get bookings with discount $0",
+    "mlq": "c=bookings; op=find; q=LCB discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find bookings with total cost $99.99",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=99.99 RCB"
+  },
+  {
+    "nlq": "Find users with 0 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users with exactly 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "Get users whose spending is $0",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=0.0 RCB"
+  },
+  {
+    "nlq": "List users that bought $0 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=0.0 RCB"
+  },
+  {
+    "nlq": "Find users from Japan",
+    "mlq": "c=users; op=find; q=LCB country=Japan RCB"
+  },
+  {
+    "nlq": "Find users from Brazil",
+    "mlq": "c=users; op=find; q=LCB country=Brazil RCB"
+  },
+  {
+    "nlq": "Find users from India",
+    "mlq": "c=users; op=find; q=LCB country=India RCB"
+  },
+  {
+    "nlq": "Find users from China",
+    "mlq": "c=users; op=find; q=LCB country=China RCB"
+  },
+  {
+    "nlq": "Find users from Nigeria",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria RCB"
+  },
+  {
+    "nlq": "Find users from Egypt",
+    "mlq": "c=users; op=find; q=LCB country=Egypt RCB"
+  },
+  {
+    "nlq": "Find users from South Africa",
+    "mlq": "c=users; op=find; q=LCB country=South Africa RCB"
+  },
+  {
+    "nlq": "Find users from Argentina",
+    "mlq": "c=users; op=find; q=LCB country=Argentina RCB"
+  },
+  {
+    "nlq": "Find users with > 40 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=40 RCB RCB"
+  },
+  {
+    "nlq": "Show users with more than 1 booking cancelled",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending above $12000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=12000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits over $4000",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=4000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with bookings >= 45",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=45 RCB RCB"
+  },
+  {
+    "nlq": "Show users cancelling 10 or more bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=10 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending at least $500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits worth $200 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with < 3 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "Show users cancelling less than 1 booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending below $100",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying under $50 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with bookings <= 2",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show users cancelling max 6 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=6 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending at most $9500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=9500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits worth $4500 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=4500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with bookings count not 22",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=22 RCB RCB"
+  },
+  {
+    "nlq": "Show users whose cancelled count isn't 4",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=4 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending not equal to $1111.11",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=1111.11 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits not $888",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=888.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for > 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing over $950",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gt=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings with price > $600",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gt=600.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings had discount > $100?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting > 9 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=9 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for >= 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=4 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $50 or more",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price minimum $80",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gte=80.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount >= $1?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gte=1.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting 8 nights or more",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=8 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for < 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings cost < $80",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lt=80.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price below $120",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lt=120.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount < $5?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lt=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting < 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for <= 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings cost $900 or less",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lte=900.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price maximum $950",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lte=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount <= $80?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lte=80.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting 4 nights or less",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=4 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=4 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings not costing $555.55",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_ne=555.55 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price != $199",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_ne=199.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount was not $10?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_ne=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not lasting 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "List users from USA or Canada or Mexico",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB USA, Canada, Mexico RB RCB RCB"
+  },
+  {
+    "nlq": "Get users in UK,  Germany,  or France",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB UK, Germany, France RB RCB RCB"
+  },
+  {
+    "nlq": "Show users from Australia or Japan",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Australia, Japan RB RCB RCB"
+  },
+  {
+    "nlq": "Find users in Spain,  Brazil,  or India",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Spain, Brazil, India RB RCB RCB"
+  },
+  {
+    "nlq": "Which users are from China or Nigeria?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB China, Nigeria RB RCB RCB"
+  },
+  {
+    "nlq": "List bookings with payment successful or failed",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB successful, failed RB RCB RCB"
+  },
+  {
+    "nlq": "Get bookings with status ok or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings either pending or successful payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, successful RB RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings from USA users",
+    "mlq": "c=users; op=find; q=LCB country=USA RCB"
+  },
+  {
+    "nlq": "Get users from UK who spent > 2000",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.totalAmountSpent=LCB OP_gt=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany with < 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.cancelledBookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "List users from Mexico with credits bought >= 500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.totalCreditsBought=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from France with bookings count <= 10",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_lte=10 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Australia not named John Smith",
+    "mlq": "c=users; op=find; q=LCB country=Australia & name=LCB OP_ne=John Smith RCB RCB"
+  },
+  {
+    "nlq": "Find users from Japan with spending != 1000",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalAmountSpent=LCB OP_ne=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from Brazil with cancelled bookings > 0",
+    "mlq": "c=users; op=find; q=LCB country=Brazil & stats.cancelledBookingsCount=LCB OP_gt=0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from India with bookings count = 0",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Get users from China who spent at least $1",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.totalAmountSpent=LCB OP_gte=1.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings for 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=5 RCB"
+  },
+  {
+    "nlq": "List pending bookings costing > $1000",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_gt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings with discount < $5",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_lt=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings lasting >= 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & numberNights=LCB OP_gte=10 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings with room price <= $90",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_lte=90.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings with guest count != 2",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_ne=2 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings where total cost is exactly $77.77",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=77.77 RCB"
+  },
+  {
+    "nlq": "Find successful bookings with number of nights = 1",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Show failed bookings with discount > 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & discount=LCB OP_gt=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings,  3 guests,  costing < $400",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=3 & totalCost=LCB OP_lt=400.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings,  1 guest,  duration > 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 & numberNights=LCB OP_gt=4 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings,  2 guests,  discount >= $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=2 & discount=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings,  4 guests,  price <= $650",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=4 & roomPrice=LCB OP_lte=650.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings,  5 guests,  duration != 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=5 & numberNights=LCB OP_ne=7 RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings,  1 guest,  cost not $99",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & totalCost=LCB OP_ne=99.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings,  <= 3 guests,  nights = 2",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_lte=3 RCB & numberNights=2 RCB"
+  },
+  {
+    "nlq": "Find successful bookings,  != 1 guest,  price > $100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_ne=1 RCB & roomPrice=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List failed bookings,  < 5 guests,  cost >= $200",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_lt=5 RCB & totalCost=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Spain with 0 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Spain & stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users from Nigeria spending less than $1000",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria & stats.totalAmountSpent=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from South Africa with at least 3 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=South Africa & stats.cancelledBookingsCount=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Argentina who bought $50 or less in credits",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.totalCreditsBought=LCB OP_lte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA with bookings count != 5",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_ne=5 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Canada named Aisha Singh",
+    "mlq": "c=users; op=find; q=LCB country=Canada & name=Aisha Singh RCB"
+  },
+  {
+    "nlq": "List users from UK with email containing '.uk'",
+    "mlq": "c=users; op=find; q=LCB country=UK & email=LCB OP_regex=.uk RCB RCB"
+  },
+  {
+    "nlq": "Get users from Germany who spent over $100 and cancelled less than 2 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.totalAmountSpent=LCB OP_gt=100.0 RCB & stats.cancelledBookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find users from France with >= 10 bookings and credits bought > $200",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_gte=10 RCB & stats.totalCreditsBought=LCB OP_gt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Australia with <= 5 cancelled bookings and spending != $0",
+    "mlq": "c=users; op=find; q=LCB country=Australia & stats.cancelledBookingsCount=LCB OP_lte=5 RCB & stats.totalAmountSpent=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings with 0 discount",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=0.0 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for >= 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gte=4 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings lasting < 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings where total cost is <= $150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=LCB OP_lte=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price != $333",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_ne=333.0 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings with non-zero discount",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings with exactly 1 night duration",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=1 RCB"
+  },
+  {
+    "nlq": "Find successful bookings costing precisely $499.99",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=499.99 RCB"
+  },
+  {
+    "nlq": "Show failed bookings for 2 guests lasting > 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=2 & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA or Canada with 0 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB USA, Canada RB RCB & stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users from Germany or France who spent less than 1000 dollars",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Germany, France RB RCB & stats.totalAmountSpent=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from UK or Australia with more than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB UK, Australia RB RCB & stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Japan or China with at least 500 credits bought",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, China RB RCB & stats.totalCreditsBought=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Spain or Brazil whose spending is not $2000",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Spain, Brazil RB RCB & stats.totalAmountSpent=LCB OP_ne=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show ok or cancelled bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB & guests=3 RCB"
+  },
+  {
+    "nlq": "List pending or failed bookings costing over $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, failed RB RCB & totalCost=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful or pending bookings lasting less than 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB successful, pending RB RCB & numberNights=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Find ok or failed bookings with discount greater than or equal to $20",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, failed RB RCB & discount=LCB OP_gte=20.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled or pending bookings with room price not equal to $150",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB cancelled, pending RB RCB & roomPrice=LCB OP_ne=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Get user Fatima Garcia",
+    "mlq": "c=users; op=find; q=LCB name=Fatima Garcia RCB"
+  },
+  {
+    "nlq": "Find user by email sofia.miller1@live.com",
+    "mlq": "c=users; op=find; q=LCB email=sofia.miller1@live.com RCB"
+  },
+  {
+    "nlq": "List users from Nigeria",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria RCB"
+  },
+  {
+    "nlq": "Show user Mohammed Davis",
+    "mlq": "c=users; op=find; q=LCB name=Mohammed Davis RCB"
+  },
+  {
+    "nlq": "Who is user ahmed.rodriguez45@icloud.com?",
+    "mlq": "c=users; op=find; q=LCB email=ahmed.rodriguez45@icloud.com RCB"
+  },
+  {
+    "nlq": "Find users in South Africa",
+    "mlq": "c=users; op=find; q=LCB country=South Africa RCB"
+  },
+  {
+    "nlq": "Get user Priya Martinez",
+    "mlq": "c=users; op=find; q=LCB name=Priya Martinez RCB"
+  },
+  {
+    "nlq": "List bookings for 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=5 RCB"
+  },
+  {
+    "nlq": "Show bookings with duration 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=10 RCB"
+  },
+  {
+    "nlq": "Find bookings where room cost $950",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=950.0 RCB"
+  },
+  {
+    "nlq": "Get bookings with discount $120",
+    "mlq": "c=bookings; op=find; q=LCB discount=120.0 RCB"
+  },
+  {
+    "nlq": "Find bookings where total cost is $50.25",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=50.25 RCB"
+  },
+  {
+    "nlq": "Show users with 42 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=42 RCB"
+  },
+  {
+    "nlq": "Get users cancelling 7 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=7 RCB"
+  },
+  {
+    "nlq": "List users spending $1337.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=1337.0 RCB"
+  },
+  {
+    "nlq": "Find users buying $2222 credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=2222.0 RCB"
+  },
+  {
+    "nlq": "Which users are from Mexico or Nigeria?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Mexico, Nigeria RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings which are failed or ok status",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB failed, ok RB RCB RCB"
+  },
+  {
+    "nlq": "Show successful or pending bookings",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB successful, pending RB RCB RCB"
+  },
+  {
+    "nlq": "Users from Argentina spending more than $500",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.totalAmountSpent=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Egypt with less than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.bookingsCount=LCB OP_lt=10 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings costing less than $75",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & totalCost=LCB OP_lt=75.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings for 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=2 RCB"
+  },
+  {
+    "nlq": "Pending bookings lasting 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Successful bookings with price >= $850",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & roomPrice=LCB OP_gte=850.0 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings with discount != 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from UK,  0 cancelled,  spent > 100",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=0 & stats.totalAmountSpent=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Germany,  > 20 bookings,  credits >= 100",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.bookingsCount=LCB OP_gt=20 RCB & stats.totalCreditsBought=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  1 guest,  lasting > 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  >= 3 guests,  cost < $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_gte=3 RCB & totalCost=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get user ananya.kumar@yahoo.com",
+    "mlq": "c=users; op=find; q=LCB email=ananya.kumar@yahoo.com RCB"
+  },
+  {
+    "nlq": "Find user Ishaan Patel",
+    "mlq": "c=users; op=find; q=LCB name=Ishaan Patel RCB"
+  },
+  {
+    "nlq": "List users from India with > 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.cancelledBookingsCount=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show user Mei Kim",
+    "mlq": "c=users; op=find; q=LCB name=Mei Kim RCB"
+  },
+  {
+    "nlq": "Find users from China who spent exactly $888.88",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.totalAmountSpent=888.88 RCB"
+  },
+  {
+    "nlq": "Get user yuki.chen@gmail.com",
+    "mlq": "c=users; op=find; q=LCB email=yuki.chen@gmail.com RCB"
+  },
+  {
+    "nlq": "Find users from Japan with < 100 credits bought",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalCreditsBought=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show user Ren Wang",
+    "mlq": "c=users; op=find; q=LCB name=Ren Wang RCB"
+  },
+  {
+    "nlq": "Find ok bookings with room price over 900",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gt=900.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings with 0 discount",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Show pending bookings lasting 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=10 RCB"
+  },
+  {
+    "nlq": "Get successful bookings for 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=5 RCB"
+  },
+  {
+    "nlq": "Find failed bookings costing less than $60",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_lt=60.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from India or China",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB India, China RB RCB RCB"
+  },
+  {
+    "nlq": "Bookings failed or pending",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB failed, pending RB RCB RCB"
+  },
+  {
+    "nlq": "Users from Nigeria,  spent > 500",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria & stats.totalAmountSpent=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Egypt,  bookings count = 1",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.bookingsCount=1 RCB"
+  },
+  {
+    "nlq": "Ok bookings,  4 guests,  cost > 200",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=4 & totalCost=LCB OP_gt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  1 night,  price < 100",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=1 & roomPrice=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find user Javier Silva",
+    "mlq": "c=users; op=find; q=LCB name=Javier Silva RCB"
+  },
+  {
+    "nlq": "Show user Mateo Santos",
+    "mlq": "c=users; op=find; q=LCB name=Mateo Santos RCB"
+  },
+  {
+    "nlq": "Users from Argentina who cancelled > 2 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.cancelledBookingsCount=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Get user camila.oliveira77@hotmail.com",
+    "mlq": "c=users; op=find; q=LCB email=camila.oliveira77@hotmail.com RCB"
+  },
+  {
+    "nlq": "Users from South Africa with spending >= 100",
+    "mlq": "c=users; op=find; q=LCB country=South Africa & stats.totalAmountSpent=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings for 1 guest and 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Find ok bookings with discount > 100",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings costing exactly $199.99",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=199.99 RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 3 guests lasting >= 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=3 & numberNights=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price <= 100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_lte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from UK with > 1 cancelled and > $100 spent",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=LCB OP_gt=1 RCB & stats.totalAmountSpent=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Spain or Mexico",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Spain, Mexico RB RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings with 1 or 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_in=LB 1, 2 RB RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings costing 50 or 100",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=LCB OP_in=LB 50.0, 100.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Find pending bookings lasting 3 or 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_in=LB 3, 4 RB RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings with discount 0 or 10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_in=LB 0.0, 10.0 RB RCB RCB"
+  },
+  {
+    "nlq": "List users from USA not named Admin User",
+    "mlq": "c=users; op=find; q=LCB country=USA & name=LCB OP_ne=Admin User RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings not for 1 night",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & numberNights=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings not costing $0",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings not having 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_ne=5 RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings with non-zero discount",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price not $999",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_ne=999.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Germany with 0 credits bought",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.totalCreditsBought=0.0 RCB"
+  },
+  {
+    "nlq": "Users from Mexico with 1 booking cancelled",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "Users from UK with spending >= 5000",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.totalAmountSpent=LCB OP_gte=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from France with bookings count < 2",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Users from Australia with credits != 100",
+    "mlq": "c=users; op=find; q=LCB country=Australia & stats.totalCreditsBought=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  room price > 800",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  discount = 50",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & discount=50.0 RCB"
+  },
+  {
+    "nlq": "Pending bookings,  guests >= 3",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  nights < 5",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & numberNights=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings,  total cost <= 100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_lte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Canada,  1 booking,  spent > 50",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.bookingsCount=1 & stats.totalAmountSpent=LCB OP_gt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Spain,  >= 2 cancellations,  credits < 100",
+    "mlq": "c=users; op=find; q=LCB country=Spain & stats.cancelledBookingsCount=LCB OP_gte=2 RCB & stats.totalCreditsBought=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  2 guests,  > 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=2 & numberNights=LCB OP_gt=3 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  1 guest,  cost <= 200",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & totalCost=LCB OP_lte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  > 4 guests,  discount != 0",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gt=4 RCB & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Pending bookings,  <= 2 guests,  price = 150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_lte=2 RCB & roomPrice=150.0 RCB"
+  },
+  {
+    "nlq": "Failed bookings,  3 guests,  duration >= 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=3 & numberNights=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show me users from India or Nigeria",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB India, Nigeria RB RCB RCB"
+  },
+  {
+    "nlq": "List users residing in Egypt or South Africa",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Egypt, South Africa RB RCB RCB"
+  },
+  {
+    "nlq": "Get ok bookings with 1 or 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_in=LB 1, 5 RB RCB RCB"
+  },
+  {
+    "nlq": "Find cancelled bookings lasting 2 or 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=LCB OP_in=LB 2, 7 RB RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings costing $80 or $120",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_in=LB 80.0, 120.0 RB RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings with discount $15 or $25",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_in=LB 15.0, 25.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Get failed bookings with room price $100 or $200",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_in=LB 100.0, 200.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA,  > 5 bookings,  spent < 1000",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_gt=5 RCB & stats.totalAmountSpent=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from Canada,  0 cancellations,  credits > 0",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.cancelledBookingsCount=0 & stats.totalCreditsBought=LCB OP_gt=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Mexico,  >= 1 booking,  spent != 500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.bookingsCount=LCB OP_gte=1 RCB & stats.totalAmountSpent=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from UK,  <= 2 cancellations,  credits <= 1000",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=LCB OP_lte=2 RCB & stats.totalCreditsBought=LCB OP_lte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany,  < 10 bookings,  spent >= 200",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.bookingsCount=LCB OP_lt=10 RCB & stats.totalAmountSpent=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings,  1 guest,  cost > 50",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & totalCost=LCB OP_gt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings,  2 guests,  duration < 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=2 & numberNights=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings,  3 guests,  discount = 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=3 & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find successful bookings,  4 guests,  price >= 500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=4 & roomPrice=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show failed bookings,  5 guests,  duration <= 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=5 & numberNights=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings,  > 2 guests,  cost != 199",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_gt=2 RCB & totalCost=LCB OP_ne=199.0 RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings,  < 4 guests,  discount > 10",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_lt=4 RCB & discount=LCB OP_gt=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find pending bookings,  >= 1 guest,  nights = 7",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_gte=1 RCB & numberNights=7 RCB"
+  },
+  {
+    "nlq": "Show successful bookings,  <= 3 guests,  price < 300",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_lte=3 RCB & roomPrice=LCB OP_lt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany",
+    "mlq": "c=users; op=find; q=LCB country=Germany RCB"
+  },
+  {
+    "nlq": "Show the user named James Smith",
+    "mlq": "c=users; op=find; q=LCB name=James Smith RCB"
+  },
+  {
+    "nlq": "Get user with email liam.johnson123@gmail.com",
+    "mlq": "c=users; op=find; q=LCB email=liam.johnson123@gmail.com RCB"
+  },
+  {
+    "nlq": "List users residing in Canada",
+    "mlq": "c=users; op=find; q=LCB country=Canada RCB"
+  },
+  {
+    "nlq": "Find user Charlotte Brown",
+    "mlq": "c=users; op=find; q=LCB name=Charlotte Brown RCB"
+  },
+  {
+    "nlq": "Which user has the email address ava.davis789@yahoo.com?",
+    "mlq": "c=users; op=find; q=LCB email=ava.davis789@yahoo.com RCB"
+  },
+  {
+    "nlq": "Show me users from UK",
+    "mlq": "c=users; op=find; q=LCB country=UK RCB"
+  },
+  {
+    "nlq": "Get details for user Noah Williams",
+    "mlq": "c=users; op=find; q=LCB name=Noah Williams RCB"
+  },
+  {
+    "nlq": "Find user with email address henry.martinez555@outlook.com",
+    "mlq": "c=users; op=find; q=LCB email=henry.martinez555@outlook.com RCB"
+  },
+  {
+    "nlq": "List all users from Australia",
+    "mlq": "c=users; op=find; q=LCB country=Australia RCB"
+  },
+  {
+    "nlq": "Show ok bookings",
+    "mlq": "c=bookings; op=find; q=LCB status=ok RCB"
+  },
+  {
+    "nlq": "List cancelled bookings",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled RCB"
+  },
+  {
+    "nlq": "Find bookings with pending payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Get bookings with successful payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful RCB"
+  },
+  {
+    "nlq": "Which bookings have failed payment status?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Find bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=3 RCB"
+  },
+  {
+    "nlq": "List bookings that lasted 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=5 RCB"
+  },
+  {
+    "nlq": "Show bookings with a room price of $250.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=250.5 RCB"
+  },
+  {
+    "nlq": "Find bookings with a discount of $20",
+    "mlq": "c=bookings; op=find; q=LCB discount=20.0 RCB"
+  },
+  {
+    "nlq": "Get bookings costing exactly $475.25",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=475.25 RCB"
+  },
+  {
+    "nlq": "Find users with exactly 15 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=15 RCB"
+  },
+  {
+    "nlq": "Show users with precisely 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=2 RCB"
+  },
+  {
+    "nlq": "Get users who spent exactly $3450.75",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=3450.75 RCB"
+  },
+  {
+    "nlq": "List users that bought exactly $1200 worth of credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=1200.0 RCB"
+  },
+  {
+    "nlq": "Find users with more than 30 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=30 RCB RCB"
+  },
+  {
+    "nlq": "List users with bookings count over 10",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Show users having greater than 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled more than 8 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=8 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent more than $5000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending exceeds $8250.50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=8250.5 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought over $1500 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits worth more than $250",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=250.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with at least 25 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=25 RCB RCB"
+  },
+  {
+    "nlq": "List users with 5 or more bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Show users having 3 or more cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled at least once?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent $10000 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=10000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is minimum $1500.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought credits worth $3000 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=3000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing at least $100 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with less than 5 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "List users with under 12 total bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=12 RCB RCB"
+  },
+  {
+    "nlq": "Show users having fewer than 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled less than 4 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent under $800",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is below $2200.50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=2200.5 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought less than $400 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits under $750",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=750.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with 8 or fewer bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=8 RCB RCB"
+  },
+  {
+    "nlq": "List users with maximum 18 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=18 RCB RCB"
+  },
+  {
+    "nlq": "Show users having at most 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Which users cancelled 5 times or less?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=5 RCB RCB"
+  },
+  {
+    "nlq": "Get users who spent $3000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=3000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending is maximum $6700.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=6700.0 RCB RCB"
+  },
+  {
+    "nlq": "List users who bought credits worth $2000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing maximum $950 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users who do not have 10 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=10 RCB RCB"
+  },
+  {
+    "nlq": "List users whose bookings count isn't 0",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Show users not having 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Which users did not cancel exactly 3 times?",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "Get users who did not spend $500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose spending isn't $4100.25",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=4100.25 RCB RCB"
+  },
+  {
+    "nlq": "List users who did not buy $100 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users purchasing credits not equal to $1800",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=1800.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for more than 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count over 1",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing over $800",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is greater than $150.75",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gt=150.75 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount higher than $60?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gt=60.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted longer than 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=7 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration more than 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for at least 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with minimum 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $100 or more",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is minimum $325.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gte=325.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount of $10 or higher?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted 3 nights or more",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with minimum duration of 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for less than 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count under 5",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing under $200",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is less than $550.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lt=550.5 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount lower than $15?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lt=15.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted fewer than 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration less than 8 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=8 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for 4 guests or fewer",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=4 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with maximum 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $600 or less",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lte=600.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is maximum $780.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lte=780.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings received a discount of $45 or lower?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lte=45.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that lasted 6 nights or less",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=6 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with maximum duration of 9 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=9 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not for 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with guest count different from 1",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings not costing $300",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_ne=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings where price is not $450.25",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_ne=450.25 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings did not receive a $5 discount?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_ne=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings that did not last 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with duration not equal to 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=10 RCB RCB"
+  },
+  {
+    "nlq": "Show me users from France or Spain",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB France, Spain RB RCB RCB"
+  },
+  {
+    "nlq": "List users who reside in either Germany or UK",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Germany, UK RB RCB RCB"
+  },
+  {
+    "nlq": "Get users from Nigeria,  Egypt,  or South Africa",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Nigeria, Egypt, South Africa RB RCB RCB"
+  },
+  {
+    "nlq": "Find users whose country is one of Japan,  China",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, China RB RCB RCB"
+  },
+  {
+    "nlq": "Which users are located in Brazil or Argentina?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Brazil, Argentina RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings with status ok or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB RCB"
+  },
+  {
+    "nlq": "List bookings with payment status pending or failed",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, failed RB RCB RCB"
+  },
+  {
+    "nlq": "Show bookings that are either ok or pending payment",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Get bookings with payment status failed or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & status=cancelled RCB"
+  },
+  {
+    "nlq": "Find bookings that are successful or ok",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & status=ok RCB"
+  },
+  {
+    "nlq": "Find users from USA with more than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Mexico who spent less than $500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.totalAmountSpent=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from France with 0 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Get users from Japan who bought at least $1000 in credits",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalCreditsBought=LCB OP_gte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Which users from India have fewer than 5 bookings?",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.bookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find users not from Germany with spending over $6000",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_ne=Germany RCB & stats.totalAmountSpent=LCB OP_gt=6000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show Canadian users who cancelled exactly 1 booking",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "List users from Brazil whose credits bought are not $0",
+    "mlq": "c=users; op=find; q=LCB country=Brazil & stats.totalCreditsBought=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Egypt with total spent $2500 or less",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.totalAmountSpent=LCB OP_lte=2500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Argentina with 20 or more bookings",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.bookingsCount=LCB OP_gte=20 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=4 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 RCB"
+  },
+  {
+    "nlq": "Find pending bookings costing less than $150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_lt=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings with a discount over $30",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_gt=30.0 RCB RCB"
+  },
+  {
+    "nlq": "Which failed bookings were for more than 5 nights?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings where room price is at least $400",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gte=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings with 2 guests or fewer",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "List pending bookings lasting exactly 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Get successful bookings that did not have 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with total cost different from $100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings for 2 guests costing more than $300",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=2 & totalCost=LCB OP_gt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings for 1 guest lasting 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & numberNights=7 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for 3 guests with room price below $200",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=3 & roomPrice=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 4 guests with discount of $0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=4 & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find failed bookings for 1 guest with duration >= 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=1 & numberNights=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "Which ok bookings had 5 guests and lasted <= 3 nights?",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=5 & numberNights=LCB OP_lte=3 RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings for 2 guests with price not equal to $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=2 & roomPrice=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for >= 3 guests costing less than $1000",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gte=3 RCB & totalCost=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings lasting > 1 night with discount over $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_gt=1 RCB & discount=LCB OP_gt=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings for < 3 guests with room price >= $50",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_lt=3 RCB & roomPrice=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find user Olivia Smith",
+    "mlq": "c=users; op=find; q=LCB name=Olivia Smith RCB"
+  },
+  {
+    "nlq": "Which user is emma.williams321@yahoo.com?",
+    "mlq": "c=users; op=find; q=LCB email=emma.williams321@yahoo.com RCB"
+  },
+  {
+    "nlq": "Show users from Mexico",
+    "mlq": "c=users; op=find; q=LCB country=Mexico RCB"
+  },
+  {
+    "nlq": "Get user named Liam Jones",
+    "mlq": "c=users; op=find; q=LCB name=Liam Jones RCB"
+  },
+  {
+    "nlq": "Find user with email oliver.garcia999@hotmail.com",
+    "mlq": "c=users; op=find; q=LCB email=oliver.garcia999@hotmail.com RCB"
+  },
+  {
+    "nlq": "List users from France",
+    "mlq": "c=users; op=find; q=LCB country=France RCB"
+  },
+  {
+    "nlq": "Show user Isabella Miller",
+    "mlq": "c=users; op=find; q=LCB name=Isabella Miller RCB"
+  },
+  {
+    "nlq": "Who is user james.davis111@outlook.com?",
+    "mlq": "c=users; op=find; q=LCB email=james.davis111@outlook.com RCB"
+  },
+  {
+    "nlq": "Find users located in Spain",
+    "mlq": "c=users; op=find; q=LCB country=Spain RCB"
+  },
+  {
+    "nlq": "Get user Benjamin Rodriguez",
+    "mlq": "c=users; op=find; q=LCB name=Benjamin Rodriguez RCB"
+  },
+  {
+    "nlq": "List bookings with payment status 'successful'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful RCB"
+  },
+  {
+    "nlq": "Find all bookings that are 'ok'",
+    "mlq": "c=bookings; op=find; q=LCB status=ok RCB"
+  },
+  {
+    "nlq": "Show bookings where payment is 'pending'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Which bookings were 'cancelled'?",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled RCB"
+  },
+  {
+    "nlq": "Get bookings with payment 'failed'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Find bookings made for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=1 RCB"
+  },
+  {
+    "nlq": "List bookings with duration of 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=2 RCB"
+  },
+  {
+    "nlq": "Show bookings where the room price was exactly $180",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=180.0 RCB"
+  },
+  {
+    "nlq": "Get bookings with discount $0",
+    "mlq": "c=bookings; op=find; q=LCB discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find bookings with total cost $99.99",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=99.99 RCB"
+  },
+  {
+    "nlq": "Find users with 0 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users with exactly 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "Get users whose spending is $0",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=0.0 RCB"
+  },
+  {
+    "nlq": "List users that bought $0 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=0.0 RCB"
+  },
+  {
+    "nlq": "Find users from Japan",
+    "mlq": "c=users; op=find; q=LCB country=Japan RCB"
+  },
+  {
+    "nlq": "Find users from Brazil",
+    "mlq": "c=users; op=find; q=LCB country=Brazil RCB"
+  },
+  {
+    "nlq": "Find users from India",
+    "mlq": "c=users; op=find; q=LCB country=India RCB"
+  },
+  {
+    "nlq": "Find users from China",
+    "mlq": "c=users; op=find; q=LCB country=China RCB"
+  },
+  {
+    "nlq": "Find users from Nigeria",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria RCB"
+  },
+  {
+    "nlq": "Find users from Egypt",
+    "mlq": "c=users; op=find; q=LCB country=Egypt RCB"
+  },
+  {
+    "nlq": "Find users from South Africa",
+    "mlq": "c=users; op=find; q=LCB country=South Africa RCB"
+  },
+  {
+    "nlq": "Find users from Argentina",
+    "mlq": "c=users; op=find; q=LCB country=Argentina RCB"
+  },
+  {
+    "nlq": "Find users with > 40 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=40 RCB RCB"
+  },
+  {
+    "nlq": "Show users with more than 1 booking cancelled",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending above $12000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=12000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits over $4000",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=4000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with bookings >= 45",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=45 RCB RCB"
+  },
+  {
+    "nlq": "Show users cancelling 10 or more bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=10 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending at least $500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits worth $200 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with < 3 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "Show users cancelling less than 1 booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=1 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending below $100",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying under $50 in credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with bookings <= 2",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show users cancelling max 6 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=6 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending at most $9500",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=9500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits worth $4500 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=4500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with bookings count not 22",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=22 RCB RCB"
+  },
+  {
+    "nlq": "Show users whose cancelled count isn't 4",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=4 RCB RCB"
+  },
+  {
+    "nlq": "Get users spending not equal to $1111.11",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=1111.11 RCB RCB"
+  },
+  {
+    "nlq": "List users buying credits not $888",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=888.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for > 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing over $950",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gt=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings with price > $600",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gt=600.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings had discount > $100?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting > 9 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=9 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for >= 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=4 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing $50 or more",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price minimum $80",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gte=80.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount >= $1?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gte=1.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting 8 nights or more",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=8 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for < 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings cost < $80",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lt=80.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price below $120",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lt=120.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount < $5?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lt=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting < 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings for <= 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings cost $900 or less",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lte=900.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price maximum $950",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lte=950.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount <= $80?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lte=80.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting 4 nights or less",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=4 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=4 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings not costing $555.55",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_ne=555.55 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings price != $199",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_ne=199.0 RCB RCB"
+  },
+  {
+    "nlq": "Which bookings discount was not $10?",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_ne=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not lasting 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "List users from USA or Canada or Mexico",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB USA, Canada, Mexico RB RCB RCB"
+  },
+  {
+    "nlq": "Get users in UK,  Germany,  or France",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB UK, Germany, France RB RCB RCB"
+  },
+  {
+    "nlq": "Show users from Australia or Japan",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Australia, Japan RB RCB RCB"
+  },
+  {
+    "nlq": "Find users in Spain,  Brazil,  or India",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Spain, Brazil, India RB RCB RCB"
+  },
+  {
+    "nlq": "Which users are from China or Nigeria?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB China, Nigeria RB RCB RCB"
+  },
+  {
+    "nlq": "List bookings with payment successful or failed",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB successful, failed RB RCB RCB"
+  },
+  {
+    "nlq": "Get bookings with status ok or cancelled",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings either pending or successful payment",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, successful RB RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings from USA users",
+    "mlq": "c=users; op=find; q=LCB country=USA RCB"
+  },
+  {
+    "nlq": "Get users from UK who spent > 2000",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.totalAmountSpent=LCB OP_gt=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany with < 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.cancelledBookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "List users from Mexico with credits bought >= 500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.totalCreditsBought=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from France with bookings count <= 10",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_lte=10 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Australia not named John Smith",
+    "mlq": "c=users; op=find; q=LCB country=Australia & name=LCB OP_ne=John Smith RCB RCB"
+  },
+  {
+    "nlq": "Find users from Japan with spending != 1000",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalAmountSpent=LCB OP_ne=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from Brazil with cancelled bookings > 0",
+    "mlq": "c=users; op=find; q=LCB country=Brazil & stats.cancelledBookingsCount=LCB OP_gt=0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from India with bookings count = 0",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Get users from China who spent at least $1",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.totalAmountSpent=LCB OP_gte=1.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings for 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=5 RCB"
+  },
+  {
+    "nlq": "List pending bookings costing > $1000",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_gt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings with discount < $5",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_lt=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings lasting >= 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & numberNights=LCB OP_gte=10 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings with room price <= $90",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_lte=90.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings with guest count != 2",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_ne=2 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings where total cost is exactly $77.77",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=77.77 RCB"
+  },
+  {
+    "nlq": "Find successful bookings with number of nights = 1",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Show failed bookings with discount > 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & discount=LCB OP_gt=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings,  3 guests,  costing < $400",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=3 & totalCost=LCB OP_lt=400.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings,  1 guest,  duration > 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 & numberNights=LCB OP_gt=4 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings,  2 guests,  discount >= $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=2 & discount=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings,  4 guests,  price <= $650",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=4 & roomPrice=LCB OP_lte=650.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings,  5 guests,  duration != 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=5 & numberNights=LCB OP_ne=7 RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings,  1 guest,  cost not $99",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & totalCost=LCB OP_ne=99.0 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings,  <= 3 guests,  nights = 2",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_lte=3 RCB & numberNights=2 RCB"
+  },
+  {
+    "nlq": "Find successful bookings,  != 1 guest,  price > $100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_ne=1 RCB & roomPrice=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List failed bookings,  < 5 guests,  cost >= $200",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_lt=5 RCB & totalCost=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Spain with 0 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Spain & stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users from Nigeria spending less than $1000",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria & stats.totalAmountSpent=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from South Africa with at least 3 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=South Africa & stats.cancelledBookingsCount=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Argentina who bought $50 or less in credits",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.totalCreditsBought=LCB OP_lte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA with bookings count != 5",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_ne=5 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Canada named Aisha Singh",
+    "mlq": "c=users; op=find; q=LCB country=Canada & name=Aisha Singh RCB"
+  },
+  {
+    "nlq": "List users from UK with email containing '.uk'",
+    "mlq": "c=users; op=find; q=LCB country=UK & email=LCB OP_regex=.uk RCB RCB"
+  },
+  {
+    "nlq": "Get users from Germany who spent over $100 and cancelled less than 2 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.totalAmountSpent=LCB OP_gt=100.0 RCB & stats.cancelledBookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Find users from France with >= 10 bookings and credits bought > $200",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_gte=10 RCB & stats.totalCreditsBought=LCB OP_gt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Australia with <= 5 cancelled bookings and spending != $0",
+    "mlq": "c=users; op=find; q=LCB country=Australia & stats.cancelledBookingsCount=LCB OP_lte=5 RCB & stats.totalAmountSpent=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings with 0 discount",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=0.0 RCB"
+  },
+  {
+    "nlq": "List cancelled bookings for >= 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gte=4 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings lasting < 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "Get successful bookings where total cost is <= $150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=LCB OP_lte=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price != $333",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_ne=333.0 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings with non-zero discount",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings with exactly 1 night duration",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=1 RCB"
+  },
+  {
+    "nlq": "Find successful bookings costing precisely $499.99",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=499.99 RCB"
+  },
+  {
+    "nlq": "Show failed bookings for 2 guests lasting > 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=2 & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA or Canada with 0 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB USA, Canada RB RCB & stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users from Germany or France who spent less than 1000 dollars",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Germany, France RB RCB & stats.totalAmountSpent=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from UK or Australia with more than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB UK, Australia RB RCB & stats.bookingsCount=LCB OP_gt=10 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Japan or China with at least 500 credits bought",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, China RB RCB & stats.totalCreditsBought=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Spain or Brazil whose spending is not $2000",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Spain, Brazil RB RCB & stats.totalAmountSpent=LCB OP_ne=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show ok or cancelled bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, cancelled RB RCB & guests=3 RCB"
+  },
+  {
+    "nlq": "List pending or failed bookings costing over $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, failed RB RCB & totalCost=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get successful or pending bookings lasting less than 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB successful, pending RB RCB & numberNights=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Find ok or failed bookings with discount greater than or equal to $20",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, failed RB RCB & discount=LCB OP_gte=20.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled or pending bookings with room price not equal to $150",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB cancelled, pending RB RCB & roomPrice=LCB OP_ne=150.0 RCB RCB"
+  },
+  {
+    "nlq": "Get user Fatima Garcia",
+    "mlq": "c=users; op=find; q=LCB name=Fatima Garcia RCB"
+  },
+  {
+    "nlq": "Find user by email sofia.miller1@live.com",
+    "mlq": "c=users; op=find; q=LCB email=sofia.miller1@live.com RCB"
+  },
+  {
+    "nlq": "List users from Nigeria",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria RCB"
+  },
+  {
+    "nlq": "Show user Mohammed Davis",
+    "mlq": "c=users; op=find; q=LCB name=Mohammed Davis RCB"
+  },
+  {
+    "nlq": "Who is user ahmed.rodriguez45@icloud.com?",
+    "mlq": "c=users; op=find; q=LCB email=ahmed.rodriguez45@icloud.com RCB"
+  },
+  {
+    "nlq": "Find users in South Africa",
+    "mlq": "c=users; op=find; q=LCB country=South Africa RCB"
+  },
+  {
+    "nlq": "Get user Priya Martinez",
+    "mlq": "c=users; op=find; q=LCB name=Priya Martinez RCB"
+  },
+  {
+    "nlq": "List bookings for 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=5 RCB"
+  },
+  {
+    "nlq": "Show bookings with duration 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=10 RCB"
+  },
+  {
+    "nlq": "Find bookings where room cost $950",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=950.0 RCB"
+  },
+  {
+    "nlq": "Get bookings with discount $120",
+    "mlq": "c=bookings; op=find; q=LCB discount=120.0 RCB"
+  },
+  {
+    "nlq": "Find bookings where total cost is $50.25",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=50.25 RCB"
+  },
+  {
+    "nlq": "Show users with 42 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=42 RCB"
+  },
+  {
+    "nlq": "Get users cancelling 7 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=7 RCB"
+  },
+  {
+    "nlq": "List users spending $1337.00",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=1337.0 RCB"
+  },
+  {
+    "nlq": "Find users buying $2222 credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=2222.0 RCB"
+  },
+  {
+    "nlq": "Which users are from Mexico or Nigeria?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Mexico, Nigeria RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings which are failed or ok status",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB failed, ok RB RCB RCB"
+  },
+  {
+    "nlq": "Show successful or pending bookings",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB successful, pending RB RCB RCB"
+  },
+  {
+    "nlq": "Users from Argentina spending more than $500",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.totalAmountSpent=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Egypt with less than 10 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.bookingsCount=LCB OP_lt=10 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings costing less than $75",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & totalCost=LCB OP_lt=75.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings for 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=2 RCB"
+  },
+  {
+    "nlq": "Pending bookings lasting 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Successful bookings with price >= $850",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & roomPrice=LCB OP_gte=850.0 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings with discount != 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from UK,  0 cancelled,  spent > 100",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=0 & stats.totalAmountSpent=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Germany,  > 20 bookings,  credits >= 100",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.bookingsCount=LCB OP_gt=20 RCB & stats.totalCreditsBought=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  1 guest,  lasting > 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & numberNights=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  >= 3 guests,  cost < $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_gte=3 RCB & totalCost=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get user ananya.kumar@yahoo.com",
+    "mlq": "c=users; op=find; q=LCB email=ananya.kumar@yahoo.com RCB"
+  },
+  {
+    "nlq": "Find user Ishaan Patel",
+    "mlq": "c=users; op=find; q=LCB name=Ishaan Patel RCB"
+  },
+  {
+    "nlq": "List users from India with > 5 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.cancelledBookingsCount=LCB OP_gt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show user Mei Kim",
+    "mlq": "c=users; op=find; q=LCB name=Mei Kim RCB"
+  },
+  {
+    "nlq": "Find users from China who spent exactly $888.88",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.totalAmountSpent=888.88 RCB"
+  },
+  {
+    "nlq": "Get user yuki.chen@gmail.com",
+    "mlq": "c=users; op=find; q=LCB email=yuki.chen@gmail.com RCB"
+  },
+  {
+    "nlq": "Find users from Japan with < 100 credits bought",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalCreditsBought=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show user Ren Wang",
+    "mlq": "c=users; op=find; q=LCB name=Ren Wang RCB"
+  },
+  {
+    "nlq": "Find ok bookings with room price over 900",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gt=900.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings with 0 discount",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Show pending bookings lasting 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=10 RCB"
+  },
+  {
+    "nlq": "Get successful bookings for 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=5 RCB"
+  },
+  {
+    "nlq": "Find failed bookings costing less than $60",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_lt=60.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from India or China",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB India, China RB RCB RCB"
+  },
+  {
+    "nlq": "Bookings failed or pending",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB failed, pending RB RCB RCB"
+  },
+  {
+    "nlq": "Users from Nigeria,  spent > 500",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria & stats.totalAmountSpent=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Egypt,  bookings count = 1",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.bookingsCount=1 RCB"
+  },
+  {
+    "nlq": "Ok bookings,  4 guests,  cost > 200",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=4 & totalCost=LCB OP_gt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  1 night,  price < 100",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=1 & roomPrice=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find user Javier Silva",
+    "mlq": "c=users; op=find; q=LCB name=Javier Silva RCB"
+  },
+  {
+    "nlq": "Show user Mateo Santos",
+    "mlq": "c=users; op=find; q=LCB name=Mateo Santos RCB"
+  },
+  {
+    "nlq": "Users from Argentina who cancelled > 2 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.cancelledBookingsCount=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Get user camila.oliveira77@hotmail.com",
+    "mlq": "c=users; op=find; q=LCB email=camila.oliveira77@hotmail.com RCB"
+  },
+  {
+    "nlq": "Users from South Africa with spending >= 100",
+    "mlq": "c=users; op=find; q=LCB country=South Africa & stats.totalAmountSpent=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings for 1 guest and 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Find ok bookings with discount > 100",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings costing exactly $199.99",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=199.99 RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 3 guests lasting >= 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=3 & numberNights=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price <= 100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_lte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from UK with > 1 cancelled and > $100 spent",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=LCB OP_gt=1 RCB & stats.totalAmountSpent=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Spain or Mexico",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Spain, Mexico RB RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings with 1 or 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_in=LB 1, 2 RB RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings costing 50 or 100",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=LCB OP_in=LB 50.0, 100.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Find pending bookings lasting 3 or 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_in=LB 3, 4 RB RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings with discount 0 or 10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_in=LB 0.0, 10.0 RB RCB RCB"
+  },
+  {
+    "nlq": "List users from USA not named Admin User",
+    "mlq": "c=users; op=find; q=LCB country=USA & name=LCB OP_ne=Admin User RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings not for 1 night",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & numberNights=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings not costing $0",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings not having 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_ne=5 RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings with non-zero discount",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price not $999",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_ne=999.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Germany with 0 credits bought",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.totalCreditsBought=0.0 RCB"
+  },
+  {
+    "nlq": "Users from Mexico with 1 booking cancelled",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.cancelledBookingsCount=1 RCB"
+  },
+  {
+    "nlq": "Users from UK with spending >= 5000",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.totalAmountSpent=LCB OP_gte=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from France with bookings count < 2",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Users from Australia with credits != 100",
+    "mlq": "c=users; op=find; q=LCB country=Australia & stats.totalCreditsBought=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  room price > 800",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gt=800.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  discount = 50",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & discount=50.0 RCB"
+  },
+  {
+    "nlq": "Pending bookings,  guests >= 3",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  nights < 5",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & numberNights=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings,  total cost <= 100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_lte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Canada,  1 booking,  spent > 50",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.bookingsCount=1 & stats.totalAmountSpent=LCB OP_gt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Spain,  >= 2 cancellations,  credits < 100",
+    "mlq": "c=users; op=find; q=LCB country=Spain & stats.cancelledBookingsCount=LCB OP_gte=2 RCB & stats.totalCreditsBought=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  2 guests,  > 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=2 & numberNights=LCB OP_gt=3 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  1 guest,  cost <= 200",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=1 & totalCost=LCB OP_lte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  > 4 guests,  discount != 0",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gt=4 RCB & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Pending bookings,  <= 2 guests,  price = 150",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_lte=2 RCB & roomPrice=150.0 RCB"
+  },
+  {
+    "nlq": "Failed bookings,  3 guests,  duration >= 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=3 & numberNights=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show me users from India or Nigeria",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB India, Nigeria RB RCB RCB"
+  },
+  {
+    "nlq": "List users residing in Egypt or South Africa",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Egypt, South Africa RB RCB RCB"
+  },
+  {
+    "nlq": "Get ok bookings with 1 or 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_in=LB 1, 5 RB RCB RCB"
+  },
+  {
+    "nlq": "Find cancelled bookings lasting 2 or 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=LCB OP_in=LB 2, 7 RB RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings costing $80 or $120",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & totalCost=LCB OP_in=LB 80.0, 120.0 RB RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings with discount $15 or $25",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_in=LB 15.0, 25.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Get failed bookings with room price $100 or $200",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_in=LB 100.0, 200.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA,  > 5 bookings,  spent < 1000",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_gt=5 RCB & stats.totalAmountSpent=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from Canada,  0 cancellations,  credits > 0",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.cancelledBookingsCount=0 & stats.totalCreditsBought=LCB OP_gt=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Mexico,  >= 1 booking,  spent != 500",
+    "mlq": "c=users; op=find; q=LCB country=Mexico & stats.bookingsCount=LCB OP_gte=1 RCB & stats.totalAmountSpent=LCB OP_ne=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from UK,  <= 2 cancellations,  credits <= 1000",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=LCB OP_lte=2 RCB & stats.totalCreditsBought=LCB OP_lte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany,  < 10 bookings,  spent >= 200",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.bookingsCount=LCB OP_lt=10 RCB & stats.totalAmountSpent=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Show ok bookings,  1 guest,  cost > 50",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & totalCost=LCB OP_gt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "List cancelled bookings,  2 guests,  duration < 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=2 & numberNights=LCB OP_lt=3 RCB RCB"
+  },
+  {
+    "nlq": "Get pending bookings,  3 guests,  discount = 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=3 & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Find successful bookings,  4 guests,  price >= 500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=4 & roomPrice=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show failed bookings,  5 guests,  duration <= 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=5 & numberNights=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings,  > 2 guests,  cost != 199",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_gt=2 RCB & totalCost=LCB OP_ne=199.0 RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings,  < 4 guests,  discount > 10",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_lt=4 RCB & discount=LCB OP_gt=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find pending bookings,  >= 1 guest,  nights = 7",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_gte=1 RCB & numberNights=7 RCB"
+  },
+  {
+    "nlq": "Show successful bookings,  <= 3 guests,  price < 300",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_lte=3 RCB & roomPrice=LCB OP_lt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Which user is from Canada?",
+    "mlq": "c=users; op=find; q=LCB country=Canada RCB"
+  },
+  {
+    "nlq": "Find users from Spain with name 'Javier Silva'",
+    "mlq": "c=users; op=find; q=LCB country=Spain & name=Javier Silva RCB"
+  },
+  {
+    "nlq": "Get user with email address 'haruto.lee5@yahoo.com'",
+    "mlq": "c=users; op=find; q=LCB email=haruto.lee5@yahoo.com RCB"
+  },
+  {
+    "nlq": "Show users whose country is 'UK'",
+    "mlq": "c=users; op=find; q=LCB country=UK RCB"
+  },
+  {
+    "nlq": "List users named 'Sakura Kim'",
+    "mlq": "c=users; op=find; q=LCB name=Sakura Kim RCB"
+  },
+  {
+    "nlq": "Find user with email 'kenji.chen@outlook.com'",
+    "mlq": "c=users; op=find; q=LCB email=kenji.chen@outlook.com RCB"
+  },
+  {
+    "nlq": "Which users are located in 'Germany'?",
+    "mlq": "c=users; op=find; q=LCB country=Germany RCB"
+  },
+  {
+    "nlq": "Get user details for 'Anya Kumar'",
+    "mlq": "c=users; op=find; q=LCB name=Anya Kumar RCB"
+  },
+  {
+    "nlq": "Find user whose email is 'diya.patel123@hotmail.com'",
+    "mlq": "c=users; op=find; q=LCB email=diya.patel123@hotmail.com RCB"
+  },
+  {
+    "nlq": "Show all users from 'Nigeria'",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria RCB"
+  },
+  {
+    "nlq": "Find bookings with status 'ok'",
+    "mlq": "c=bookings; op=find; q=LCB status=ok RCB"
+  },
+  {
+    "nlq": "List bookings where payment status is 'failed'",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Show bookings for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=4 RCB"
+  },
+  {
+    "nlq": "Get bookings that lasted 1 night",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=1 RCB"
+  },
+  {
+    "nlq": "Find bookings with room price $650.00",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=650.0 RCB"
+  },
+  {
+    "nlq": "List bookings having discount $55.50",
+    "mlq": "c=bookings; op=find; q=LCB discount=55.5 RCB"
+  },
+  {
+    "nlq": "Show bookings with total cost $321.00",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=321.0 RCB"
+  },
+  {
+    "nlq": "Find users with bookings count = 5",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=5 RCB"
+  },
+  {
+    "nlq": "Get users having cancelled bookings count = 0",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "List users with total amount spent $7890.12",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=7890.12 RCB"
+  },
+  {
+    "nlq": "Show users whose total credits bought is $100",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=100.0 RCB"
+  },
+  {
+    "nlq": "Find users with booking count > 25",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gt=25 RCB RCB"
+  },
+  {
+    "nlq": "List users who cancelled > 3 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gt=3 RCB RCB"
+  },
+  {
+    "nlq": "Show users spending more than $10000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gt=10000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users who bought credits > $2000",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gt=2000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with >= 10 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_gte=10 RCB RCB"
+  },
+  {
+    "nlq": "List users cancelling >= 1 booking",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show users spending at least $5000",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_gte=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users buying credits worth $500 or more",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with < 2 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "List users cancelling less than 5 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lt=5 RCB RCB"
+  },
+  {
+    "nlq": "Show users spending below $200",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users buying credits under $1000",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users with <= 1 booking",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "List users cancelling at most 2 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show users spending $1000 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_lte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users buying credits worth $2500 or less",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_lte=2500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users whose bookings count is not 12",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=LCB OP_ne=12 RCB RCB"
+  },
+  {
+    "nlq": "List users with cancelled count different from 0",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Show users spending not equal to $50",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=LCB OP_ne=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users buying credits != $300",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=LCB OP_ne=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings with guests > 2",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "List bookings where total cost is over $750",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gt=750.0 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings with room price greater than $400",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gt=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings having discount more than $25",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gt=25.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings lasting longer than 6 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gt=6 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with >= 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_gte=3 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings costing at least $120",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_gte=120.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings with room price $200 or more",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_gte=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings having discount of $50 or higher",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "List bookings lasting 4 nights or more",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_gte=4 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings with < 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings costing less than $90",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lt=90.0 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings with room price below $150",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lt=150.0 RCB RCB"
+  },
+  {
+    "nlq": "List bookings having discount under $5",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lt=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings lasting fewer than 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lt=2 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings with <= 5 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_lte=5 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings costing $800 or less",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_lte=800.0 RCB RCB"
+  },
+  {
+    "nlq": "List bookings with room price at most $700",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_lte=700.0 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings having discount of $75 or lower",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_lte=75.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings lasting 8 nights or less",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_lte=8 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB guests=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "List bookings where total cost is not $444.44",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=LCB OP_ne=444.44 RCB RCB"
+  },
+  {
+    "nlq": "Show bookings with room price different from $299",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=LCB OP_ne=299.0 RCB RCB"
+  },
+  {
+    "nlq": "Get bookings having discount not equal to $18.50",
+    "mlq": "c=bookings; op=find; q=LCB discount=LCB OP_ne=18.5 RCB RCB"
+  },
+  {
+    "nlq": "Find bookings not lasting 5 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=LCB OP_ne=5 RCB RCB"
+  },
+  {
+    "nlq": "Find users from USA or Germany or France",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB USA, Germany, France RB RCB RCB"
+  },
+  {
+    "nlq": "Show users residing in Canada or UK or Australia",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Canada, UK, Australia RB RCB RCB"
+  },
+  {
+    "nlq": "Get users located in Mexico or Spain",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Mexico, Spain RB RCB RCB"
+  },
+  {
+    "nlq": "Which users are from Japan,  India,  or Brazil?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, India, Brazil RB RCB RCB"
+  },
+  {
+    "nlq": "List users whose country is China or Egypt",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB China, Egypt RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings with status 'ok' or payment 'successful'",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & paymentStatus=successful RCB"
+  },
+  {
+    "nlq": "Show bookings that are 'cancelled' or payment 'failed'",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & paymentStatus=failed RCB"
+  },
+  {
+    "nlq": "Get 'ok' bookings with 'pending' payment",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & paymentStatus=pending RCB"
+  },
+  {
+    "nlq": "Which bookings are 'pending' payment and 'ok' status?",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & status=ok RCB"
+  },
+  {
+    "nlq": "Find users from USA with > 2 cancelled bookings",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.cancelledBookingsCount=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Show users from UK spending less than $300",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.totalAmountSpent=LCB OP_lt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Canada having >= 20 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.bookingsCount=LCB OP_gte=20 RCB RCB"
+  },
+  {
+    "nlq": "Find users from France with cancelled count <= 1",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.cancelledBookingsCount=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Spain whose total spending is not $1500",
+    "mlq": "c=users; op=find; q=LCB country=Spain & stats.totalAmountSpent=LCB OP_ne=1500.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from Australia with email like '%.au'",
+    "mlq": "c=users; op=find; q=LCB country=Australia & email=LCB OP_regex=.au$ RCB RCB"
+  },
+  {
+    "nlq": "Get users from Japan named 'Kenji Suzuki'",
+    "mlq": "c=users; op=find; q=LCB country=Japan & name=Kenji Suzuki RCB"
+  },
+  {
+    "nlq": "Find users from Brazil with credits > 0 and bookings > 0",
+    "mlq": "c=users; op=find; q=LCB country=Brazil & stats.totalCreditsBought=LCB OP_gt=0.0 RCB & stats.bookingsCount=LCB OP_gt=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from India who cancelled = 0 and spent >= 1000",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.cancelledBookingsCount=0 & stats.totalAmountSpent=LCB OP_gte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Find 'ok' bookings for 2 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=2 RCB"
+  },
+  {
+    "nlq": "List 'cancelled' bookings lasting 7 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & numberNights=7 RCB"
+  },
+  {
+    "nlq": "Show 'pending' payment bookings with price > $500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & roomPrice=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Get 'successful' payment bookings with discount < $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_lt=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Find 'failed' payment bookings costing >= $50",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "List 'ok' bookings with nights <= 2",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & numberNights=LCB OP_lte=2 RCB RCB"
+  },
+  {
+    "nlq": "Show 'cancelled' bookings where guests != 1",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Get 'pending' payment bookings with discount exactly $10",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & discount=10.0 RCB"
+  },
+  {
+    "nlq": "Find 'successful' payment bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=3 RCB"
+  },
+  {
+    "nlq": "List 'failed' payment bookings where total cost is not $0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find 'ok' bookings for 1 guest costing > $100",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & totalCost=LCB OP_gt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "List 'cancelled' bookings for 2 guests lasting < 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=2 & numberNights=LCB OP_lt=4 RCB RCB"
+  },
+  {
+    "nlq": "Show 'pending' bookings for 3 guests with discount >= $5",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=3 & discount=LCB OP_gte=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Get 'successful' bookings for 4 guests with price <= $750",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=4 & roomPrice=LCB OP_lte=750.0 RCB RCB"
+  },
+  {
+    "nlq": "Find 'failed' bookings for 5 guests with duration != 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=5 & numberNights=LCB OP_ne=3 RCB RCB"
+  },
+  {
+    "nlq": "List 'ok' bookings for 1 guest with cost not $250",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=1 & totalCost=LCB OP_ne=250.0 RCB RCB"
+  },
+  {
+    "nlq": "Show 'cancelled' bookings,  > 1 guest,  price = $300",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_gt=1 RCB & roomPrice=300.0 RCB"
+  },
+  {
+    "nlq": "Get 'pending' bookings,  <= 2 guests,  nights = 5",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_lte=2 RCB & numberNights=5 RCB"
+  },
+  {
+    "nlq": "Find 'successful' bookings,  != 3 guests,  discount > $0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_ne=3 RCB & discount=LCB OP_gt=0.0 RCB RCB"
+  },
+  {
+    "nlq": "List 'failed' bookings,  < 2 guests,  cost >= $100",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_lt=2 RCB & totalCost=LCB OP_gte=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from China with 0 cancellations",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.cancelledBookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show users from Nigeria spending > $1000",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria & stats.totalAmountSpent=LCB OP_gt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "List users from Egypt with booking count >= 5",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.bookingsCount=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Get users from South Africa with credits bought < $200",
+    "mlq": "c=users; op=find; q=LCB country=South Africa & stats.totalCreditsBought=LCB OP_lt=200.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Argentina with cancelled count != 1",
+    "mlq": "c=users; op=find; q=LCB country=Argentina & stats.cancelledBookingsCount=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "Show users from USA named 'Ava Davis'",
+    "mlq": "c=users; op=find; q=LCB country=USA & name=Ava Davis RCB"
+  },
+  {
+    "nlq": "List users from Canada with email ending in '.ca'",
+    "mlq": "c=users; op=find; q=LCB country=Canada & email=LCB OP_regex=.ca$ RCB RCB"
+  },
+  {
+    "nlq": "Get users from UK spending < 100 and bookings > 0",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.totalAmountSpent=LCB OP_lt=100.0 RCB & stats.bookingsCount=LCB OP_gt=0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany with <= 1 cancellation and credits >= 50",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.cancelledBookingsCount=LCB OP_lte=1 RCB & stats.totalCreditsBought=LCB OP_gte=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from France with bookings != 3 and spent > 500",
+    "mlq": "c=users; op=find; q=LCB country=France & stats.bookingsCount=LCB OP_ne=3 RCB & stats.totalAmountSpent=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find 'ok' bookings with discount $0",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & discount=0.0 RCB"
+  },
+  {
+    "nlq": "List 'cancelled' bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 RCB"
+  },
+  {
+    "nlq": "Show 'pending' payment bookings lasting > 8 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_gt=8 RCB RCB"
+  },
+  {
+    "nlq": "Get 'successful' payment bookings costing < $120",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=LCB OP_lt=120.0 RCB RCB"
+  },
+  {
+    "nlq": "Find 'failed' payment bookings with price >= $60",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_gte=60.0 RCB RCB"
+  },
+  {
+    "nlq": "List 'ok' bookings with guest count <= 4",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_lte=4 RCB RCB"
+  },
+  {
+    "nlq": "Show 'cancelled' bookings where discount != 20",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & discount=LCB OP_ne=20.0 RCB RCB"
+  },
+  {
+    "nlq": "Get 'pending' payment bookings for exactly 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=2 RCB"
+  },
+  {
+    "nlq": "Find 'successful' payment bookings with total cost $350.00",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=350.0 RCB"
+  },
+  {
+    "nlq": "List 'failed' payment bookings for 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=4 RCB"
+  },
+  {
+    "nlq": "Find users from USA or Germany with > 1000 spent",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB USA, Germany RB RCB & stats.totalAmountSpent=LCB OP_gt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Canada or UK with <= 1 cancelled booking",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Canada, UK RB RCB & stats.cancelledBookingsCount=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "List users from Mexico or France with != 0 bookings",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Mexico, France RB RCB & stats.bookingsCount=LCB OP_ne=0 RCB RCB"
+  },
+  {
+    "nlq": "Get users from Australia or Spain with credits < 500",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Australia, Spain RB RCB & stats.totalCreditsBought=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Japan or India with >= 5 bookings",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Japan, India RB RCB & stats.bookingsCount=LCB OP_gte=5 RCB RCB"
+  },
+  {
+    "nlq": "Show ok or failed bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, failed RB RCB & guests=1 RCB"
+  },
+  {
+    "nlq": "List pending or successful bookings costing < $250",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB pending, successful RB RCB & totalCost=LCB OP_lt=250.0 RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled or ok bookings lasting > 6 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB cancelled, ok RB RCB & numberNights=LCB OP_gt=6 RCB RCB"
+  },
+  {
+    "nlq": "Find failed or pending bookings with discount <= $30",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB failed, pending RB RCB & discount=LCB OP_lte=30.0 RCB RCB"
+  },
+  {
+    "nlq": "Show successful or cancelled bookings with price != $400",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB successful, cancelled RB RCB & roomPrice=LCB OP_ne=400.0 RCB RCB"
+  },
+  {
+    "nlq": "Get user Omar Hernandez",
+    "mlq": "c=users; op=find; q=LCB name=Omar Hernandez RCB"
+  },
+  {
+    "nlq": "Find user by email ali.lopez66@live.com",
+    "mlq": "c=users; op=find; q=LCB email=ali.lopez66@live.com RCB"
+  },
+  {
+    "nlq": "List users from Argentina",
+    "mlq": "c=users; op=find; q=LCB country=Argentina RCB"
+  },
+  {
+    "nlq": "Show user Youssef Gonzalez",
+    "mlq": "c=users; op=find; q=LCB name=Youssef Gonzalez RCB"
+  },
+  {
+    "nlq": "Who is user khaled.wilson9@icloud.com?",
+    "mlq": "c=users; op=find; q=LCB email=khaled.wilson9@icloud.com RCB"
+  },
+  {
+    "nlq": "Find users in Egypt",
+    "mlq": "c=users; op=find; q=LCB country=Egypt RCB"
+  },
+  {
+    "nlq": "Get user Ethan Anderson",
+    "mlq": "c=users; op=find; q=LCB name=Ethan Anderson RCB"
+  },
+  {
+    "nlq": "List bookings for 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB guests=1 RCB"
+  },
+  {
+    "nlq": "Show bookings with duration 4 nights",
+    "mlq": "c=bookings; op=find; q=LCB numberNights=4 RCB"
+  },
+  {
+    "nlq": "Find bookings where room cost $75.50",
+    "mlq": "c=bookings; op=find; q=LCB roomPrice=75.5 RCB"
+  },
+  {
+    "nlq": "Get bookings with discount $1.00",
+    "mlq": "c=bookings; op=find; q=LCB discount=1.0 RCB"
+  },
+  {
+    "nlq": "Find bookings where total cost is $890.00",
+    "mlq": "c=bookings; op=find; q=LCB totalCost=890.0 RCB"
+  },
+  {
+    "nlq": "Show users with 33 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.bookingsCount=33 RCB"
+  },
+  {
+    "nlq": "Get users cancelling 9 bookings",
+    "mlq": "c=users; op=find; q=LCB stats.cancelledBookingsCount=9 RCB"
+  },
+  {
+    "nlq": "List users spending $6543.21",
+    "mlq": "c=users; op=find; q=LCB stats.totalAmountSpent=6543.21 RCB"
+  },
+  {
+    "nlq": "Find users buying $777 credits",
+    "mlq": "c=users; op=find; q=LCB stats.totalCreditsBought=777.0 RCB"
+  },
+  {
+    "nlq": "Which users are from France or Italy?",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB France, Italy RB RCB RCB"
+  },
+  {
+    "nlq": "Find bookings which are ok or pending status",
+    "mlq": "c=bookings; op=find; q=LCB status=LCB OP_in=LB ok, pending RB RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled or failed bookings",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=LCB OP_in=LB cancelled, failed RB RCB RCB"
+  },
+  {
+    "nlq": "Users from India spending less than $500",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.totalAmountSpent=LCB OP_lt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from China with more than 2 cancellations",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.cancelledBookingsCount=LCB OP_gt=2 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings lasting more than 9 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & numberNights=LCB OP_gt=9 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings for 3 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=3 RCB"
+  },
+  {
+    "nlq": "Pending bookings with discount = 0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & discount=0.0 RCB"
+  },
+  {
+    "nlq": "Successful bookings with total cost >= $1000",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & totalCost=LCB OP_gte=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings with guests != 4",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=LCB OP_ne=4 RCB RCB"
+  },
+  {
+    "nlq": "Users from USA,  > 1 cancellation,  credits = 0",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.cancelledBookingsCount=LCB OP_gt=1 RCB & stats.totalCreditsBought=0.0 RCB"
+  },
+  {
+    "nlq": "Users from Canada,  <= 5 bookings,  spent != 100",
+    "mlq": "c=users; op=find; q=LCB country=Canada & stats.bookingsCount=LCB OP_lte=5 RCB & stats.totalAmountSpent=LCB OP_ne=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  >= 4 guests,  cost < 600",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_gte=4 RCB & totalCost=LCB OP_lt=600.0 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  < 2 guests,  price > 300",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_lt=2 RCB & roomPrice=LCB OP_gt=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  1 guest,  nights >= 2",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=1 & numberNights=LCB OP_gte=2 RCB RCB"
+  },
+  {
+    "nlq": "Find user Daniel Thomas",
+    "mlq": "c=users; op=find; q=LCB name=Daniel Thomas RCB"
+  },
+  {
+    "nlq": "Users from Japan with 0 bookings",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.bookingsCount=0 RCB"
+  },
+  {
+    "nlq": "Show user Matthew Taylor",
+    "mlq": "c=users; op=find; q=LCB name=Matthew Taylor RCB"
+  },
+  {
+    "nlq": "Users from Australia who spent < $100",
+    "mlq": "c=users; op=find; q=LCB country=Australia & stats.totalAmountSpent=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Get user david.moore22@hotmail.com",
+    "mlq": "c=users; op=find; q=LCB email=david.moore22@hotmail.com RCB"
+  },
+  {
+    "nlq": "Users from Nigeria with cancelled bookings >= 1",
+    "mlq": "c=users; op=find; q=LCB country=Nigeria & stats.cancelledBookingsCount=LCB OP_gte=1 RCB RCB"
+  },
+  {
+    "nlq": "List failed bookings for 1 guest and 1 night",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=1 & numberNights=1 RCB"
+  },
+  {
+    "nlq": "Find ok bookings with price > 500",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_gt=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Show cancelled bookings costing exactly $250.00",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=250.0 RCB"
+  },
+  {
+    "nlq": "Get pending bookings for 2 guests lasting <= 3 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=2 & numberNights=LCB OP_lte=3 RCB RCB"
+  },
+  {
+    "nlq": "Find successful bookings with discount != 50",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_ne=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Find users from Germany with < 5 bookings and spent > 50",
+    "mlq": "c=users; op=find; q=LCB country=Germany & stats.bookingsCount=LCB OP_lt=5 RCB & stats.totalAmountSpent=LCB OP_gt=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Show users from Brazil or Argentina or Chile",
+    "mlq": "c=users; op=find; q=LCB country=LCB OP_in=LB Brazil, Argentina, Chile RB RCB RCB"
+  },
+  {
+    "nlq": "List ok bookings for 3 or 4 guests",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=LCB OP_in=LB 3, 4 RB RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings costing 200 or 300",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=LCB OP_in=LB 200.0, 300.0 RB RCB RCB"
+  },
+  {
+    "nlq": "Find pending bookings lasting 1 or 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & numberNights=LCB OP_in=LB 1, 10 RB RCB RCB"
+  },
+  {
+    "nlq": "Show successful bookings with discount 5 or 15",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_in=LB 5.0, 15.0 RB RCB RCB"
+  },
+  {
+    "nlq": "List users from France not named 'Test User'",
+    "mlq": "c=users; op=find; q=LCB country=France & name=LCB OP_ne=Test User RCB RCB"
+  },
+  {
+    "nlq": "Find ok bookings not for 2 nights",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & numberNights=LCB OP_ne=2 RCB RCB"
+  },
+  {
+    "nlq": "Get cancelled bookings not costing $10",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & totalCost=LCB OP_ne=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Show pending bookings not having 1 guest",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_ne=1 RCB RCB"
+  },
+  {
+    "nlq": "List successful bookings with discount not $0",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & discount=LCB OP_ne=0.0 RCB RCB"
+  },
+  {
+    "nlq": "Find failed bookings with room price not $50",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & roomPrice=LCB OP_ne=50.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Spain with 10+ credits bought",
+    "mlq": "c=users; op=find; q=LCB country=Spain & stats.totalCreditsBought=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from Egypt with 2 bookings cancelled",
+    "mlq": "c=users; op=find; q=LCB country=Egypt & stats.cancelledBookingsCount=2 RCB"
+  },
+  {
+    "nlq": "Users from India with spending <= 10000",
+    "mlq": "c=users; op=find; q=LCB country=India & stats.totalAmountSpent=LCB OP_lte=10000.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from China with bookings count > 1",
+    "mlq": "c=users; op=find; q=LCB country=China & stats.bookingsCount=LCB OP_gt=1 RCB RCB"
+  },
+  {
+    "nlq": "Users from Japan with credits != 5000",
+    "mlq": "c=users; op=find; q=LCB country=Japan & stats.totalCreditsBought=LCB OP_ne=5000.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  room price < 100",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & roomPrice=LCB OP_lt=100.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  discount = 100",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & discount=100.0 RCB"
+  },
+  {
+    "nlq": "Pending bookings,  guests <= 1",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  nights > 8",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & numberNights=LCB OP_gt=8 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings,  total cost >= 500",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & totalCost=LCB OP_gte=500.0 RCB RCB"
+  },
+  {
+    "nlq": "Users from USA,  > 2 bookings,  spent = 0",
+    "mlq": "c=users; op=find; q=LCB country=USA & stats.bookingsCount=LCB OP_gt=2 RCB & stats.totalAmountSpent=0.0 RCB"
+  },
+  {
+    "nlq": "Users from UK,  0 cancellations,  credits >= 10",
+    "mlq": "c=users; op=find; q=LCB country=UK & stats.cancelledBookingsCount=0 & stats.totalCreditsBought=LCB OP_gte=10.0 RCB RCB"
+  },
+  {
+    "nlq": "Ok bookings,  5 guests,  <= 1 night",
+    "mlq": "c=bookings; op=find; q=LCB status=ok & guests=5 & numberNights=LCB OP_lte=1 RCB RCB"
+  },
+  {
+    "nlq": "Successful bookings,  < 3 guests,  cost != 300",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=successful & guests=LCB OP_lt=3 RCB & totalCost=LCB OP_ne=300.0 RCB RCB"
+  },
+  {
+    "nlq": "Cancelled bookings,  != 1 guest,  discount > 5",
+    "mlq": "c=bookings; op=find; q=LCB status=cancelled & guests=LCB OP_ne=1 RCB & discount=LCB OP_gt=5.0 RCB RCB"
+  },
+  {
+    "nlq": "Pending bookings,  >= 2 guests,  price < 1000",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=pending & guests=LCB OP_gte=2 RCB & roomPrice=LCB OP_lt=1000.0 RCB RCB"
+  },
+  {
+    "nlq": "Failed bookings,  1 guest,  duration = 10 nights",
+    "mlq": "c=bookings; op=find; q=LCB paymentStatus=failed & guests=1 & numberNights=10 RCB"
+  }
+]
