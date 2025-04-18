@@ -1,6 +1,7 @@
 
 ## Sections  
 - [Description](#description)  
+- [Quickstart](#quick-start)
 - [Objective](#objective)  
 - [Process](#processs)  
 
@@ -8,6 +9,40 @@
 ## Description 
 Fine-Tune a sequence-to-sequence model for Natural Language translation to MongoDB Query 
 
+
+<a name="quick-start"></a>
+## Quickstart
+1. Download the model I trained and uploaded on Hugging Face [here](https://huggingface.co/paulc1212/paulc1212-nl-query-2-mongo-query-t5-small) or can fine-tune yours by following the Jupyter Notebook steps [here](ml/Fine%20tune%20T5%20for%20NLQ%20to%20MLQ.ipynb).  
+   Or load the model directly from Hugging Face by tweaking step 4 below (last paragraph)
+2. Create .env file in the root directory and add the following variables:
+    ```bash
+    MONGO_INITDB_ROOT_USERNAME=admin
+    MONGO_INITDB_ROOT_PASSWORD= #mention some random password
+    MONGO_INITDB_DATABASE=user-bookings
+    MONGO_HOST_PORT=27017
+
+    # path to the model downloaded from Hugging Face or your own trained model, I've put mine in the ml folder
+    MODEL_PATH="ml/paulc1212-nl-query-2-mongo-query-t5-small" 
+    SCHEMA_FILE="ml/database_schema.txt"
+    MODEL_PREFIX="translate Natural Language to MongoDB Query: "
+    TORCH_DEVICE="mps" #cuda - if using GPU, mps - if using Macbook with Apple silicon chip, cpu - if using CPU
+    ```
+3. Bring mongodb up with docker
+    ```bash
+    docker-compose up -d
+    ```
+4. Run the python inferce api by running `start_python_inference_api.sh` script
+    ```bash
+    ./start_python_inference_api.sh
+    ```
+   The inference api is set to run on port `9990` but can be changed inside `start_python_inference_api.sh` script (line `8`)
+<a name="inference-api"></a>
+5. Run the web application by running `start_web_app.sh` script
+    ```bash
+    PORT="9990" #this line
+    ```
+   The python_inference_api can be [tweaked](https://huggingface.co/paulc1212/paulc1212-nl-query-2-mongo-query-t5-small?library=transformers) to load the model directly from HF.  
+   Can use the debug [notebook](debug/debug.ipynb) to check that the inference API is up and running
 
 <a name="objective"></a>
 ## Objective
@@ -29,9 +64,9 @@ The reason for chosing a small model is because is more suitable for experimenta
     - The initial MongoDB query (MLQ) targets structure was defined in json format as
         ```json
         {
-            "c":"users", //collection name
-            "op":"find", //query operation - find only for now
-            "q": { //query filter
+            "c":"users", 
+            "op":"find", 
+            "q": { 
                 "country": "Canada",
                 "stats.totalCreditsBought": {
                     "$gt": 1000.0
@@ -39,7 +74,14 @@ The reason for chosing a small model is because is more suitable for experimenta
             }
         }
         ```
-        However, the nested JSON structure proved to be troublesome for the model to learn. Especially because the model tokenizer was representing the curly brackets (`{}`) as <unk> tokens.
+        where
+        | Field  | Description |
+        | ------------- | ------------- |
+        | c  | collection name |
+        | op  | operation type - for not focus only on find |
+        | q  | query filter (json object) |  
+
+        However, the nested JSON structure proved to be troublesome for the model to learn. Especially because the model tokenizer was representing the curly brackets `{}` as `<unk>` tokens.
     - Solution: Instead of JSON structure adopt a novel linearized (flattened) format using distinct markers to represent symbols e.g.  
 
         | Symbol  | Marker |

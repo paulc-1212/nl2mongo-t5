@@ -1,0 +1,9 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0 
+transformers>=4.51.1     
+torch>=2.6.0             
+sentencepiece            
+protobuf               
+accelerate>=0.20.0       
+python-dotenv>=1.0.0     
+huggingface_hub>=0.15.0
