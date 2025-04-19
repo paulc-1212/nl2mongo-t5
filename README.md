@@ -42,7 +42,7 @@ Fine-Tune a sequence-to-sequence model for Natural Language translation to Mongo
     PORT="9990" #this line
     ```
    The python_inference_api can be [tweaked](https://huggingface.co/paulc1212/paulc1212-nl-query-2-mongo-query-t5-small?library=transformers) to load the model directly from HF.  
-   Can use the debug [notebook](debug/debug.ipynb) to check that the inference API is up and running
+   Can use the debug [notebook](debug/debug.ipynb) tool (`Debug python_inference_api`) to check that the inference API is up and running
 
 <a name="objective"></a>
 ## Objective

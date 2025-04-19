@@ -14,6 +14,18 @@ services:
     volumes:
       - ./mongo_db:/docker-entrypoint-initdb.d
       - mongo-data:/data/db
+  web-app:
+    build:
+      context: ./web_app 
+      dockerfile: Dockerfile
+    container_name: web-app-container 
+    ports:
+      - "9999:9999" 
+    environment:
+      - INFERENCE_API_URL=http://localhost:9990/predict #python_inference_api host and port
+    depends_on:
+      - mongo_db
+    restart: unless-stopped
 
 volumes:
   mongo-data:
