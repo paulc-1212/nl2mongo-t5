@@ -31,13 +31,17 @@ Fine-Tune a sequence-to-sequence model for Natural Language translation to Mongo
     ```bash
     docker-compose up -d
     ```
-4. Run the python inferce api by running `start_python_inference_api.sh` script
+4. Install [conda](https://conda.org/) ecosystem if not already installed. 
+    Run the python inferce api by running the following:
+   
     ```bash
-    ./start_python_inference_api.sh
+    conda activate <your_env> #activate conda env
+
+    pip install -r python_inference_api/requirements.txt #install the requirements
+    
+    ./start_python_inference_api.sh #run the inference API
     ```
    The inference api is set to run on port `9990` but can be changed inside `start_python_inference_api.sh` script (line `8`)
-<a name="inference-api"></a>
-5. Run the web application by running `start_web_app.sh` script
     ```bash
     PORT="9990" #this line
     ```
