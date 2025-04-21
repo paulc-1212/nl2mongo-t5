@@ -12,15 +12,17 @@ export abstract class Message {
     protected readonly _id: number;
     protected readonly _sender: Sender;
     protected readonly _content: string | DataItem[];
-    protected readonly _durationMs?: number;
     protected readonly _isError: boolean;
+    protected readonly _durationMs?: number;
+    protected readonly _stats?: DataItem;
 
-    protected constructor(sender: Sender, content: Content, durationMs?: number, isError: boolean = false) {
+    protected constructor(sender: Sender, content: Content, durationMs?: number, isError: boolean = false, stats?: DataItem) {
         this._id = Date.now();
         this._sender = sender;
         this._content = content;
         this._durationMs = durationMs;
         this._isError = isError;
+        this._stats = stats;
     }
 
     public get id(): number {
@@ -42,6 +44,10 @@ export abstract class Message {
     public get isError(): boolean {
         return this._isError;
     }
+
+    public get stats(): DataItem | undefined {
+        return this._stats;
+    }
 }
 
 export class MessageFromUser extends Message {
@@ -57,8 +63,8 @@ export class MessageFromUser extends Message {
 
 export class MessageFromSystem extends Message {
 
-    constructor(content: DataItem[], isError: boolean = false, durationMs?: number, ) {
-        super(SenderType.System, content, durationMs, isError);
+    constructor(content: DataItem[], isError: boolean = false, durationMs?: number, stats?: DataItem) {
+        super(SenderType.System, content, durationMs, isError, stats);
     }
 
     public override get content(): DataItem[] {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,7 @@ export default function RootLayout({
         <div className="flex flex-col h-screen bg-gray-950 text-gray-100 font-sans">
           <header className="p-3 border-b border-cyan-500/20 flex justify-start items-center bg-gray-900 shadow-md">
             <div className="flex items-center text-lg font-medium text-gray-100">
-              〄 NL2MQ
+              <Link href="/">〄 NL2MQ</Link>
             </div>
           </header>
           <main className="flex-grow flex flex-col items-center p-4 overflow-y-auto">

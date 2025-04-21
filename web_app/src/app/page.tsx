@@ -3,19 +3,21 @@
 import SystemMessage from '@/components/SystemMessage';
 import UserMessage from '@/components/UserMessage';
 import { DataItem, Message, MessageFromSystem, MessageFromUser, SenderType } from '@/lib/Message';
+import { useAddMessage, useMessages } from '@/store/messageStore';
 import { FormEvent, useState } from 'react';
 
 
 export default function Home() {
   const [query, setQuery] = useState('');
-  const [messages, setMessages] = useState<Message[]>([]);
+  const messages = useMessages();
+  const addMessage = useAddMessage();
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!query) return;
 
     const newMessage: Message = new MessageFromUser(query);
-    setMessages((prevMessages) => [...prevMessages, newMessage]);
+    addMessage(newMessage);
     setQuery('');
 
     try {
@@ -28,27 +30,27 @@ export default function Home() {
         },
         body: JSON.stringify({ query }),
       })
-      const json: DataItem = await response.json();
+      const json = await response.json();
       if (!response.ok) {
-        const errorMessage: Message = new MessageFromSystem([json], true);
-        setMessages((prevMessages) => [...prevMessages, errorMessage]);
+        const errorMessage: Message = new MessageFromSystem(json, true);
+        addMessage(errorMessage);
         return;
       }
       const endTime = performance.now();
       const duration = Math.round(endTime - startTime);
-      const systemMessage: Message = new MessageFromSystem([json], false, duration);
-      setMessages((prevMessages) => [...prevMessages, systemMessage]);
-    } catch(error:unknown) {
+      const systemMessage: Message = new MessageFromSystem(json.content, false, duration, json.stats);
+      addMessage(systemMessage);
+    } catch (error: unknown) {
       console.error("Error fetching data:", JSON.stringify(error));
-      const errorMessage: Message = new MessageFromSystem([{error}] as DataItem[], true);
-      setMessages((prevMessages) => [...prevMessages, errorMessage]);
+      const errorMessage: Message = new MessageFromSystem(error as DataItem[], true);
+      addMessage(errorMessage);
     }
   }
 
   return (
     <>
       <h1 className="text-2xl font-light mb-6 text-gray-200 text-center">
-      Start chatting with your MongoDB data below ↓
+        Start chatting with your MongoDB data below ↓
       </h1>
       <div className="w-full max-w-3xl flex-grow overflow-y-auto mb-4 space-y-4">
         {!messages.length && (

@@ -1,0 +1,11 @@
+#Environment variables files
+.env
+
+#Node.js dependencies
+node_modules
+
+# Next.js output
+.next
+
+# Operating System files
+.DS_Store

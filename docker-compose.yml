@@ -5,8 +5,6 @@ services:
     image: mongo:latest
     container_name: mongo_service
     restart: always
-    ports:
-      - "${MONGO_HOST_PORT:-27017}:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
@@ -14,6 +12,18 @@ services:
     volumes:
       - ./mongo_db:/docker-entrypoint-initdb.d
       - mongo-data:/data/db
+  rust_query:
+    container_name: rust_query_server
+    build:
+      context: ./rust_query_api
+      dockerfile: Dockerfile
+    environment:
+      MONGODB_URI: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo_db:${MONGO_HOST_PORT}/${MONGO_INITDB_DATABASE}?authSource=admin 
+      DATABASE_NAME: ${MONGO_INITDB_DATABASE}
+      RUST_LOG: info 
+    depends_on:
+      - mongo_db 
+    restart: unless-stopped
   web-app:
     build:
       context: ./web_app 
@@ -22,9 +32,10 @@ services:
     ports:
       - "9999:9999" 
     environment:
-      - INFERENCE_API_URL=http://localhost:9990/predict #python_inference_api host and port
+      - INFERENCE_API_URL=http://host.docker.internal:9990/predict #python_inference_api host and port
+      - QUERY_API_URL=http://rust_query:8080/query #rust_query server API host and port
     depends_on:
-      - mongo_db
+      - rust_query
     restart: unless-stopped
 
 volumes:
