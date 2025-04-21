@@ -5,10 +5,11 @@
 - [Objective](#objective)  
 - [Process](#processs)  
 - [Quickstart](#quick-start)
+- [TODO](#todo)
 
 <a name="description"></a>
 ## Description 
-Fine-Tune a sequence-to-sequence model for Natural Language translation to MongoDB Query 
+Fine-Tune a sequence-to-sequence model for Natural Language translation to MongoDB queries.
 
 <a name="demo"></a>
 ## Demo
@@ -144,3 +145,14 @@ The reason for chosing a small model is because is more suitable for experimenta
     ```bash
     docker-compose up -d
     ```
+
+<a name="todo"></a>
+## TODO
+- [x] Fine-tune a T5 model on a dataset created from a MongoDB database
+- [x] Create a python inference API to serve the model
+- [x] Create a web application to interact with the model
+- [x] Create a rust server API to query the MongoDB database
+- [x] Dockerize the MongoDB database, rust server API and web application
+- [ ] Create a MCP (Model Context Protocol) server to feed the data into a LLM. This will remove the need of tabular data view in the frontend. Might require LangChain for agentic capabilities (can chat and filter further on the retrieved data)
+- [ ] Create a much larger dataset to include more complex queries (including aggregations) and fine-tune the model again
+- [ ] Store chat history
