@@ -12,7 +12,7 @@ Fine-Tune a sequence-to-sequence model for Natural Language translation to Mongo
 
 <a name="demo"></a>
 ## Demo
-<video src="video/video_demo.mov" controls></video>
+https://github.com/user-attachments/assets/14993d7b-5b47-42a8-b1c6-0d6f58c3e371
 
 <a name="objective"></a>
 ## Objective
